@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nadeko_Stuff
 {
-    internal class VanillaReactions
+    internal class StockNadekoReactions
     {
         
     }
