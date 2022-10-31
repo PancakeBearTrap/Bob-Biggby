@@ -694,11 +694,6 @@ namespace Bob_Biggby
 
             //L
 
-            //test string
-            commands.Add(new Response()
-                .SetPrompts("test prompt")
-                .SetResponses(NadekoLCR.TestString()));
-
             SaveCustomReactions();
         }
 

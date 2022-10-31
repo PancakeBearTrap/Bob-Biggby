@@ -289,6 +289,9 @@
       "fuck"
     ],
     "responses": [
+      //AoE2 Fuck Not Censored, index: 43
+      "https://media.discordapp.net/attachments/895367300390211634/931645134691516446/RDT_20220114_1524178313261399590404924.jpg",
+      //Witcher, index: 6q
       "https://media.discordapp.net/attachments/895367300390211634/972388680033513563/443f76a3-466c-4063-80f3-926ee124bb06.gif"
     ]
   },
@@ -313,6 +316,11 @@
       "fuck you"
     ],
     "responses": [
+      //Suction Cup Man, fuck you song, index: #r
+      "https://www.youtube.com/watch?v=jEXjhGJg1Jk",
+      //Suction cup man every time he says fuck you, index: #6i
+      "https://youtu.be/7V22OCLqovA",
+      //Vaas fuck you; index 7n
       "https://cdn.discordapp.com/attachments/989223734781018112/1009453766476562503/VideoEditor_20220730_081226.mp4"
     ]
   },
@@ -627,10 +635,19 @@
   },
   {
     "prompts": [
-      "test prompt"
+      "larson"
     ],
     "responses": [
-      "response 0"
+      "https://tenor.com/view/no-randy-jackson-dawg-gif-12730917"
+    ]
+  },
+  {
+    "prompts": [
+      "loveall"
+    ],
+    "responses": [
+      "https://tenor.com/view/campesino-farmer-looking-sneaking-gif-14335387"
     ]
   }
+
 ]
