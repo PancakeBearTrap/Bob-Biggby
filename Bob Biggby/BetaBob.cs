@@ -712,7 +712,6 @@ namespace Bob_Biggby
         void UpdateCustomReactions()
         {
             commands.Clear();
-
         }
 
         void CustomReastionsEditTime()
