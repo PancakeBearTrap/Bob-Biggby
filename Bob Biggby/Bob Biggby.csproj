@@ -213,7 +213,7 @@
     <Compile Include="Global Strings\Clock Tower Strings.cs" />
     <Compile Include="Global Strings\Emote Strings.cs" />
     <Compile Include="Custom Reactions\Beta Bob%27s Commands.cs" />
-    <Compile Include="Nadeko Stuff\VanillaReactions.cs" />
+    <Compile Include="Nadeko Stuff\Stock Nadeko Reactions.cs" />
     <Compile Include="Services\Blame Timer\Blame Timer.cs" />
     <Compile Include="Services\Blame Timer\Timer Template.cs" />
     <Compile Include="Services\Recurring Events\Event Storage.cs" />
