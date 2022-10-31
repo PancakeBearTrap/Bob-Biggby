@@ -1240,19 +1240,6 @@ namespace CustomReactions
             var Zuko = "https://tenor.com/view/thats-rough-buddy-avatar-the-last-airbender-zuko-gif-17596756";
             return Zuko;
         }
-
-        public static string TestString()
-        {
-            string msg0 = "response 0";
-            string msg1 = "response 1";
-            string msg2 = "response 2";
-            string msg3 = "response 3";
-            string msg4 = "response 4";
-            string msg5 = "response 5";
-            
-            return msg0;
-          
-        }
     }
 
     public class BetaBobLCR
