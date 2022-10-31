@@ -299,6 +299,7 @@ namespace CustomReactions
             return dan;
         }
 
+        //2 responses
         public static string DanW()
         {
             String[] msg =
