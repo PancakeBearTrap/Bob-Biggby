@@ -1449,10 +1449,10 @@ namespace Bob_Biggby
             }
 
             //Going Dark
-            else if (lowmess.Equals("going dark") || lowmess.Equals("bob is going offline"))
-            {
-                await message.Channel.SendMessageAsync("https://tenor.com/view/bravo-six-going-dark-cod-sergeant-mw-modern-warfare-gif-14985183");
-            }
+            //else if (lowmess.Equals("going dark") || lowmess.Equals("bob is going offline"))
+            //{
+            //    await message.Channel.SendMessageAsync("https://tenor.com/view/bravo-six-going-dark-cod-sergeant-mw-modern-warfare-gif-14985183");
+            //}
 
             //Willy P and Willie 
             else if (lowmess.Contains("willy p") || lowmess.Contains("willie"))
@@ -1864,7 +1864,8 @@ namespace Bob_Biggby
 
                 }
                 //End of Proactive LB
-            }//End of Leaderboard
+            }
+            //End of Leaderboard
 
             else if (lowmess.Contains("proactive point") && Proactive)
             {
@@ -1947,7 +1948,8 @@ namespace Bob_Biggby
                                     Console.WriteLine("Proactive Points cannot be incremented beyond its current value");
                                     await message.Channel.SendMessageAsync($"{maia} can't have more than {Int64.MaxValue} Proactive Points. They currently have {ainur.proactivePoints} Proactive Points");
                                 }
-                            }//End of "try" for awarding PPs
+                            }
+                            //End of "try" for awarding PPs
                             catch (FormatException)
                             {
                                 Console.WriteLine("Input string '{0}' is not a sequence of digits", finalTrim);
@@ -1957,11 +1959,15 @@ namespace Bob_Biggby
                             {
                                 Console.WriteLine("The number cannot fit in an Int32");
                                 await message.Channel.SendMessageAsync("You can't assign more than 9,223,372,036,854,775,808 Proactive Points at a time");
-                            }//End awarding Try
+                            }
+                            //End awarding Try
+
                             Console.WriteLine("End of awarding Proactive Points \n");
                             foundProactive = true;
                             break;
-                        }//End of awarding Proactive Points
+
+                        }
+                        //End of awarding Proactive Points
 
                         //Taking away Proactive Points
                         else if (lowmess.IndexOf($"{maia} loses ", StringComparison.OrdinalIgnoreCase) >= 0)
@@ -2951,6 +2957,31 @@ namespace Bob_Biggby
                     }
                 }
                 //end of if("test")
+
+                else if (lowmess.StartsWith("!"))
+                {
+                    if (lowmess.StartsWith("!add"))
+                    {
+                        //Setup
+                        var commandAdd = message.Content;
+                        var trimA = "!add ";
+                        var trimB = "-";
+                        var charA = trimA.ToCharArray();
+                        var charB = trimB.ToCharArray();
+                        var newCommand = commandAdd.TrimStart(charA);
+
+                        Console.WriteLine($"commandAdd: '{commandAdd}'");
+                        Console.WriteLine($"trim: '{trimA}'");                        
+                        Console.WriteLine($"newCommand: '{newCommand}'");
+
+                        //Defining Prompt
+                        var startTrim = newCommand.TrimStart(charB);
+
+                        
+                        var endTrim = newCommand.Remove(0, newCommand.Length);
+
+                    }
+                }
 
                 else if (lowmess.Contains("time") || lowmess.Contains("date"))
                 {
