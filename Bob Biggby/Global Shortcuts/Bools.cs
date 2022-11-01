@@ -254,36 +254,32 @@ namespace GlobalShortcuts
                 channel.Id == 892114358803513364;
         }
 
-
-        //Version 5
+        //Version 6
         public static bool IsHelpDesk(ISocketMessageChannel channel)
         {
             return
-                channel.Id == 992466760412438588;
+                channel.Id == 1037109157750374482;
         }
         
 
         // Fun Zone
-        // Version 5
+        // Version 6
         public static bool IsChillChat(ISocketMessageChannel channel)
         {
             return
-                channel.Id == 992466654132977815;
+                channel.Id == 1037109287874474014;
         }
 
         public static bool IsMemes(ISocketMessageChannel channel)
         {
             return
-                channel.Id == 992466865752387616;
+                channel.Id == 1037109396657946725;
         }
 
-
-        //Niche Channels
-        //Version 5
         public static bool IsPolitics(ISocketMessageChannel channel)
         {
             return
-                channel.Id == 992466967497818202;
+                channel.Id == 1037109501842698320;
         }
 
         //Bot testing
