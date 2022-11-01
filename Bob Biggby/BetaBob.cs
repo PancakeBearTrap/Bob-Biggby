@@ -31,6 +31,8 @@ using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 using System.Windows.Interop;
 using Discord.Rest;
+using System.Xml.Linq;
+using System.Resources;
 
 //Current Version, Desktop 2.8
 
@@ -2965,9 +2967,9 @@ namespace Bob_Biggby
                         //Setup
                         var commandAdd = message.Content;
                         var trimA = "!add ";
-                        var trimB = "-";
+                        var indicator = "-";
+                        var indicatorChar = indicator.ToCharArray();
                         var charA = trimA.ToCharArray();
-                        var charB = trimB.ToCharArray();
                         var newCommand = commandAdd.TrimStart(charA);
 
                         Console.WriteLine($"commandAdd: '{commandAdd}'");
@@ -2975,9 +2977,14 @@ namespace Bob_Biggby
                         Console.WriteLine($"newCommand: '{newCommand}'");
 
                         //Defining Prompt
-                        var startTrim = newCommand.TrimStart(charB);
+                        //var promptSuccess = Regex.Match(newCommand, @"\b" + Regex.Escape($"-".ToLower()) + @"\b").Success;
 
-                        
+                        var pattern = @"- /w+ /s";
+                        RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace;
+                        var promptBegin = Regex.Match(newCommand, @"- \w+\s");
+
+                        Console.WriteLine($"the first '-' index is: {promptBegin.Index} \nthe second '-' index is: {promptBegin.Index}");
+
                         var endTrim = newCommand.Remove(0, newCommand.Length);
 
                     }
