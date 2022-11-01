@@ -694,11 +694,6 @@ namespace Bob_Biggby
 
             //L
 
-            //test string
-            commands.Add(new Response()
-                .SetPrompts("test prompt")
-                .SetResponses(NadekoLCR.TestString()));
-
             SaveCustomReactions();
         }
 
@@ -717,7 +712,6 @@ namespace Bob_Biggby
         void UpdateCustomReactions()
         {
             commands.Clear();
-
         }
 
         void CustomReastionsEditTime()
@@ -1455,10 +1449,10 @@ namespace Bob_Biggby
             }
 
             //Going Dark
-            else if (lowmess.Equals("going dark") || lowmess.Equals("bob is going offline"))
-            {
-                await message.Channel.SendMessageAsync("https://tenor.com/view/bravo-six-going-dark-cod-sergeant-mw-modern-warfare-gif-14985183");
-            }
+            //else if (lowmess.Equals("going dark") || lowmess.Equals("bob is going offline"))
+            //{
+            //    await message.Channel.SendMessageAsync("https://tenor.com/view/bravo-six-going-dark-cod-sergeant-mw-modern-warfare-gif-14985183");
+            //}
 
             //Willy P and Willie 
             else if (lowmess.Contains("willy p") || lowmess.Contains("willie"))
@@ -1870,7 +1864,8 @@ namespace Bob_Biggby
 
                 }
                 //End of Proactive LB
-            }//End of Leaderboard
+            }
+            //End of Leaderboard
 
             else if (lowmess.Contains("proactive point") && Proactive)
             {
@@ -1953,7 +1948,8 @@ namespace Bob_Biggby
                                     Console.WriteLine("Proactive Points cannot be incremented beyond its current value");
                                     await message.Channel.SendMessageAsync($"{maia} can't have more than {Int64.MaxValue} Proactive Points. They currently have {ainur.proactivePoints} Proactive Points");
                                 }
-                            }//End of "try" for awarding PPs
+                            }
+                            //End of "try" for awarding PPs
                             catch (FormatException)
                             {
                                 Console.WriteLine("Input string '{0}' is not a sequence of digits", finalTrim);
@@ -1963,11 +1959,15 @@ namespace Bob_Biggby
                             {
                                 Console.WriteLine("The number cannot fit in an Int32");
                                 await message.Channel.SendMessageAsync("You can't assign more than 9,223,372,036,854,775,808 Proactive Points at a time");
-                            }//End awarding Try
+                            }
+                            //End awarding Try
+
                             Console.WriteLine("End of awarding Proactive Points \n");
                             foundProactive = true;
                             break;
-                        }//End of awarding Proactive Points
+
+                        }
+                        //End of awarding Proactive Points
 
                         //Taking away Proactive Points
                         else if (lowmess.IndexOf($"{maia} loses ", StringComparison.OrdinalIgnoreCase) >= 0)
@@ -2958,6 +2958,31 @@ namespace Bob_Biggby
                 }
                 //end of if("test")
 
+                else if (lowmess.StartsWith("!"))
+                {
+                    if (lowmess.StartsWith("!add"))
+                    {
+                        //Setup
+                        var commandAdd = message.Content;
+                        var trimA = "!add ";
+                        var trimB = "-";
+                        var charA = trimA.ToCharArray();
+                        var charB = trimB.ToCharArray();
+                        var newCommand = commandAdd.TrimStart(charA);
+
+                        Console.WriteLine($"commandAdd: '{commandAdd}'");
+                        Console.WriteLine($"trim: '{trimA}'");                        
+                        Console.WriteLine($"newCommand: '{newCommand}'");
+
+                        //Defining Prompt
+                        var startTrim = newCommand.TrimStart(charB);
+
+                        
+                        var endTrim = newCommand.Remove(0, newCommand.Length);
+
+                    }
+                }
+
                 else if (lowmess.Contains("time") || lowmess.Contains("date"))
                 {
                     var BigBen = "What format?";
@@ -3114,59 +3139,3 @@ namespace Bob_Biggby
     //end of class Program
 }
 //end of namespace Bob Biggby
-
-#region Index
-
-//else if statements: 637
-/* bees in my head: 739
- * blame: 1711
- * bob: 816
- * bob is going offline: 727
- * bob testing: 1812
- * count (JP, PP, blame): 1640
- * deez nutz: 745
- * EDI testing: 2069
- * get me a jeffery: 714
- * ghost town: 802
- * going dark: 727
- * good morning: 676
- * I am the Custodian: 637
- * I am the Senate: 637
- * insult: 656
- * irish curse: 755
- * Joe Points: 1297
- * leaderboard: 906
- * morning: 676
- * pinging degens in proactive chats: 809
- * PPs: 1004
- * quickbooks: 783
- * rob's desktop: 751
- * that's you're opinion: 708
- * will's masterbatorium: 757
- * will's spank bank: 757
- * willie p: 733
- * willy p: 733
- * you're wrong: 702
- */
-
-//readonly strings: 279
-/* adjit string: 325
- * alpha bob commands: 434
- * Alpha bob commands to add: 466
- * bob sass: 399
- * curse: 413
- * good morning string: 342
- * insult string: 283
- * item string: 299
- * marty insult: 488
- * marty praise: 494
- * morning string: 351
- * names w/o reactions: 476
- * people name list: 366
- * proactive name list: 386
- * shakespeare 1: 429
- * shakespeare 2: 430
- * shakespeare 3: 431
- */
-
-#endregion Index
