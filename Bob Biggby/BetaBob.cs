@@ -2966,26 +2966,52 @@ namespace Bob_Biggby
                     {
                         //Setup
                         var commandAdd = message.Content;
-                        var trimA = "!add ";
-                        var indicator = "-";
-                        var indicatorChar = indicator.ToCharArray();
-                        var charA = trimA.ToCharArray();
-                        var newCommand = commandAdd.TrimStart(charA);
+                        var start = "!add ";
+                        var indicatorPrompt = "prompt ";
+                        var indicatorResponse = "response";
 
                         Console.WriteLine($"commandAdd: '{commandAdd}'");
-                        Console.WriteLine($"trim: '{trimA}'");                        
+                        Console.WriteLine($"trim: '{start}'");
+                        Console.WriteLine($"indicator prompt: '{indicatorPrompt}'");
+                        Console.WriteLine($"indicator response: '{indicatorResponse}'");
+
+                        //ToCharArray()
+                        var promptChar = indicatorPrompt.ToCharArray();
+                        var responseChar = indicatorResponse.ToCharArray();
+                        var trimStart = start.ToCharArray();
+
+                        //Defining new command
+                        var newCommand = commandAdd.TrimStart(trimStart);
                         Console.WriteLine($"newCommand: '{newCommand}'");
 
+                        //Differentiating Prompt and Response
+                        Match matchPrompt = Regex.Match(newCommand, indicatorPrompt);
+                        int promptIndex = matchPrompt.Index;
+
+                        Console.WriteLine($"prompt indicator index: {matchPrompt.Index}");
+                        Console.WriteLine($"promptRemove index: {promptIndex}\n");
+
                         //Defining Prompt
-                        //var promptSuccess = Regex.Match(newCommand, @"\b" + Regex.Escape($"-".ToLower()) + @"\b").Success;
+                        Console.WriteLine("Defining prompt");
 
-                        var pattern = @"- /w+ /s";
-                        RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace;
-                        var promptBegin = Regex.Match(newCommand, @"- \w+\s");
+                        var promptTrim = newCommand.TrimStart(promptChar);
+                        Console.WriteLine($"first trim result '{promptTrim}'");
 
-                        Console.WriteLine($"the first '-' index is: {promptBegin.Index} \nthe second '-' index is: {promptBegin.Index}");
+                        Match matchResponse = Regex.Match(promptTrim, indicatorResponse);
+                        int responseIndex = matchResponse.Index - 1;
+                        Console.WriteLine($"response indicator index: {matchResponse.Index}");
 
-                        var endTrim = newCommand.Remove(0, newCommand.Length);
+                        var command = promptTrim.Remove(responseIndex);
+                        Console.WriteLine($"final result: '{command}'\n");
+
+                        //Definding response
+                        Console.WriteLine("Defining response");
+
+                        var trim1 = newCommand.Remove(0, responseIndex);
+                        Console.WriteLine($"trim 1 is: '{trim1}'");
+
+                        var trim2 = trim1.TrimStart(responseChar);
+                        Console.WriteLine($"trim 2 is: '{trim2}'");
 
                     }
                 }
