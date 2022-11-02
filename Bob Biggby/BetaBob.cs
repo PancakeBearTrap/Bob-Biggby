@@ -2964,11 +2964,17 @@ namespace Bob_Biggby
                     {
                         //Setup
                         var commandAdd = message.Content;
+<<<<<<< Updated upstream
                         var trimA = "!add ";
                         var trimB = "-";
                         var charA = trimA.ToCharArray();
                         var charB = trimB.ToCharArray();
                         var newCommand = commandAdd.TrimStart(charA);
+=======
+                        var start = "!add ";
+                        var indicatorPrompt = "prompt ";
+                        var indicatorResponse = "response ";
+>>>>>>> Stashed changes
 
                         Console.WriteLine($"commandAdd: '{commandAdd}'");
                         Console.WriteLine($"trim: '{trimA}'");                        
