@@ -2958,6 +2958,7 @@ namespace Bob_Biggby
                 }
                 //end of if("test")
 
+<<<<<<< Updated upstream
                 else if (lowmess.StartsWith("!"))
                 {
                     if (lowmess.StartsWith("!add"))
@@ -2989,6 +2990,8 @@ namespace Bob_Biggby
                     }
                 }
 
+=======
+>>>>>>> Stashed changes
                 else if (lowmess.Contains("time") || lowmess.Contains("date"))
                 {
                     var BigBen = "What format?";
