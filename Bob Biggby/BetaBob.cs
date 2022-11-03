@@ -2958,40 +2958,6 @@ namespace Bob_Biggby
                 }
                 //end of if("test")
 
-<<<<<<< Updated upstream
-                else if (lowmess.StartsWith("!"))
-                {
-                    if (lowmess.StartsWith("!add"))
-                    {
-                        //Setup
-                        var commandAdd = message.Content;
-<<<<<<< Updated upstream
-                        var trimA = "!add ";
-                        var trimB = "-";
-                        var charA = trimA.ToCharArray();
-                        var charB = trimB.ToCharArray();
-                        var newCommand = commandAdd.TrimStart(charA);
-=======
-                        var start = "!add ";
-                        var indicatorPrompt = "prompt ";
-                        var indicatorResponse = "response ";
->>>>>>> Stashed changes
-
-                        Console.WriteLine($"commandAdd: '{commandAdd}'");
-                        Console.WriteLine($"trim: '{trimA}'");                        
-                        Console.WriteLine($"newCommand: '{newCommand}'");
-
-                        //Defining Prompt
-                        var startTrim = newCommand.TrimStart(charB);
-
-                        
-                        var endTrim = newCommand.Remove(0, newCommand.Length);
-
-                    }
-                }
-
-=======
->>>>>>> Stashed changes
                 else if (lowmess.Contains("time") || lowmess.Contains("date"))
                 {
                     var BigBen = "What format?";
