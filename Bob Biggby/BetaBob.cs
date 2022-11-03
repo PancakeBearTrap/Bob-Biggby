@@ -882,6 +882,7 @@ namespace Bob_Biggby
         {
             "Becky",
             "Brittney",
+            "Brandon",
             "Daniel", "The Custodian",
             "Dan B",
             "Dan W",
@@ -901,6 +902,7 @@ namespace Bob_Biggby
         readonly String[] proactiveNameList = 
         {
             "Brittney",
+            "Brandon",
             "Daniel (The Custodian)",
             "Dennis",
             "Jake",
@@ -1820,7 +1822,8 @@ namespace Bob_Biggby
                             //List of leaderboards
                             else
                             {
-                                var msg = "Would you like to see the Joe Points Leaderboard (command: `Joe Points leaderboard`) or the Blame Count Leaderboard (command: `Blame Count Leaderboard`). The commands are not case sensitive.";
+                                var msg = "Would you like to see the Joe Points Leaderboard (command: `Joe Points leaderboard`) or the Blame Count Leaderboard (command: `Blame Count Leaderboard`). " +
+                                    "The commands are not case sensitive.";
                                 await message.Channel.SendMessageAsync(msg);
                                 foundLB = true;
                                 break;
