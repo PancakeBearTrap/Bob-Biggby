@@ -852,15 +852,9 @@ namespace Bob_Biggby
             //How do you do, fellow kids?
             "https://tenor.com/view/how-do-you-do-fellow-kids-steve-buscemi-30rock-fellow-kids-one-of-us-gif-21904018",
         };
-
         //Grumpy morning responses
         readonly String[] morning =
         {
-            "I'd rather be taking a nap",
-            "no, thank you",
-            "There's no such thing as a 'good' morning",
-            "unintelligble grunting",
-            
             //exhausted
             "https://tenor.com/view/tired-af-crying-sad-kid-baby-gif-16784052",
             //kid on swing
@@ -946,6 +940,8 @@ namespace Bob_Biggby
         readonly String[] shakespeare1 = { "goatish", "mangled", "puny", "roguish", "reeky", "saucy", "weedy", "yeasty", "vallainous", "gleeking" };
         readonly String[] shakespeare2 = { "beef-witted", "clay-brained", "thin-skinned", "hedge-faced", "milk-livered", "fly-loving", "rump-fed", "toast-spotted", "weather-bitten", "fool-born" };
         readonly String[] shakespeare3 = { "barnacle", "boar-pig", "bum-bailey", "clot-pole", "foot-licker", "horn-beast", "maggot-pie", "malt-worm", "pumpkin", "whey-spiller" };
+        readonly String[] shakespearePhrases = { "What, you egg", "Villain, I have done thy mother", "You are a fishmonger", "Well. here is my leg", "Take you me for a sponge, my lord?", 
+            "Do you see yonder cloud that's almost in the shape of a camel?", "Eat my leek" };
 
         //String for regular insults
         readonly String[] regularInsults =
@@ -1124,6 +1120,29 @@ namespace Bob_Biggby
             "https://cdn.discordapp.com/attachments/951622505959919656/958798166956867684/unknown.png",
             //St. Diarrhea's Day Massacre
             "https://cdn.discordapp.com/attachments/951622505959919656/958799437797392434/unknown.png",
+        };
+
+        readonly String[] troubleshootingWheel =
+        {
+            "Reinstall it",
+            "Reboot", 
+            "Recreate profile", 
+            "Ignore the problem, see if it comes back", 
+            "Clear cached credentials", 
+            "Shut down the PC. Head home and don't come back",
+            "Go fuck yourself", 
+            "Make sure it's plugged in",
+            "Check for updates", 
+            "Is it wet?", 
+            "Try turning the volume up", 
+            "Try it in a different browser", 
+            "Reseat the cables",
+            "Uhhhhhhh (then hang up)", 
+            "Your problem is petty and you're wasting my time", 
+            "Lo siento no hablo ingles (hang up)",
+            "Oh I see we have an ID10t error",
+            "PEBCAC.PEBCAC.PEBCAC", 
+            "Try logging in again", 
         };
 
         #endregion Readonly Strings
@@ -1405,8 +1424,15 @@ namespace Bob_Biggby
                 int goodMorningChoice = random.Next(0, goodMorning.Length);
                 string msg;
 
+                //trimming excess characters
+                var also = "also ".ToCharArray();
+                var symbols = "!".ToCharArray();
+                var trim = lowmess.TrimStart(also);
+                var filterMessage = trim.TrimEnd(symbols);
+                Console.WriteLine($"filtered message: '{filterMessage}'");
+
                 //Grumpy
-                if (lowmess.Equals("morning") || lowmess.Equals("also morning") || lowmess.Equals("mornin"))
+                if (filterMessage.Equals("morning") || filterMessage.Equals("mornin"))
                 {
                     if (respondChoice == 0)
                     {
@@ -1422,9 +1448,7 @@ namespace Bob_Biggby
                 }
 
                 //Positive
-                else if (lowmess.Equals("good morning") || lowmess.Equals("also good morning") ||
-                        lowmess.Equals("good morning!") || lowmess.Equals("also good morning!") ||
-                        lowmess.Equals("morning!") || lowmess.Equals("also morning!") || lowmess.Equals("mornin!"))
+                else if (filterMessage.Equals("good morning") || filterMessage.Equals("good mornin"))
                 {
                     msg = $"{goodMorning[goodMorningChoice]}";
                     await message.Channel.SendMessageAsync(msg);
@@ -1761,6 +1785,15 @@ namespace Bob_Biggby
             {
                 await message.AddReactionAsync(thumbsupEmoji);
                 LunchReminder(message);
+            }
+
+            else if (lowmess.Equals("troubleshooting wheel"))
+            {
+                Random random = new Random();
+                int value = random.Next(0, troubleshootingWheel.Length);
+                var tip = ($"{troubleshootingWheel[value]}");
+
+                await message.Channel.SendMessageAsync(tip);                
             }
 
             #region Custom Points
