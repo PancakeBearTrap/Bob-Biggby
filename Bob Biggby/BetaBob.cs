@@ -412,6 +412,7 @@ namespace Bob_Biggby
                 .SetPrompts("big stupid jellyfish")
                 .SetResponses(NadekoLCR.BigStupidJellyfish()));
 
+            //2 responses
             commands.Add(new Response()
                 .SetPrompts("bitch")
                 .SetResponses(NadekoLCR.Bitch()));
@@ -458,6 +459,7 @@ namespace Bob_Biggby
                 .SetPrompts("dan")
                 .SetResponses(NadekoLCR.Dan()));
 
+            //2 responses
             commands.Add(new Response()
                 .SetPrompts("dan w")
                 .SetResponses(NadekoLCR.DanW()));
@@ -474,10 +476,12 @@ namespace Bob_Biggby
                 .SetPrompts("dennis")
                 .SetResponses(NadekoLCR.Dennis()));
 
+            //2 responses
             commands.Add(new Response()
                 .SetPrompts("dew it")
                 .SetResponses(NadekoLCR.DewIt()));
 
+            //5 responses. includes dew it
             commands.Add(new Response()
                 .SetPrompts("do it")
                 .SetResponses(NadekoLCR.DoIt()));
@@ -532,6 +536,7 @@ namespace Bob_Biggby
                 .SetPrompts("fuck that")
                 .SetResponses(NadekoLCR.FuckThat()));
 
+            //3 responses
             commands.Add(new Response()
                 .SetPrompts("fuck you")
                 .SetResponses(NadekoLCR.FuckYou()));
@@ -610,6 +615,7 @@ namespace Bob_Biggby
                 .SetPrompts("i quit")
                 .SetResponses(NadekoLCR.IQuit()));
 
+            //2 responses
             commands.Add(new Response()
                 .SetPrompts("i understand that reference", "i understood that reference")
                 .SetResponses(NadekoLCR.IUnderstandThatReference()));
@@ -693,6 +699,183 @@ namespace Bob_Biggby
                 .SetResponses(NadekoLCR.KnowYourPlace()));
 
             //L
+            commands.Add(new Response()
+                .SetPrompts("larson")
+                .SetResponses(NadekoLCR.Larson()));
+
+            commands.Add(new Response()
+                .SetPrompts("loveall")
+                .SetResponses(NadekoLCR.Loveall()));
+
+            //M
+            commands.Add(new Response()
+                .SetPrompts("martin")
+                .SetResponses(NadekoLCR.Martin()));
+
+            commands.Add(new Response()
+                .SetPrompts("marty")
+                .SetResponses(NadekoLCR.Marty()));
+
+            commands.Add(new Response()
+                .SetPrompts("mild shock")
+                .SetResponses(NadekoLCR.MildShock()));
+
+            //N
+            commands.Add(new Response()
+                .SetPrompts("noc")
+                .SetResponses(NadekoLCR.NOC()));
+
+            //O
+            commands.Add(new Response()
+                .SetPrompts("on site", "onsite")
+                .SetResponses(NadekoLCR.OnSite1()));
+
+            commands.Add(new Response()
+                .SetPrompts("oops")
+                .SetResponses(NadekoLCR.Oops()));
+
+            commands.Add(new Response()
+                .SetPrompts("oopsie")
+                .SetResponses(NadekoLCR.Oopsie()));
+
+            //P
+            commands.Add(new Response()
+                .SetPrompts("panda rage")
+                .SetResponses(NadekoLCR.PandaRage()));
+
+            commands.Add(new Response()
+                .SetPrompts("pebcac")
+                .SetResponses(NadekoLCR.Pebcac()));
+
+            commands.Add(new Response()
+                .SetPrompts("praise the beheaded")
+                .SetResponses(NadekoLCR.PraiseTheBeheaded()));
+
+            commands.Add(new Response()
+                .SetPrompts("praise the sun")
+                .SetResponses(NadekoLCR.PraiseTheSun()));
+
+            //R
+            commands.Add(new Response()
+                .SetPrompts("rob")
+                .SetResponses(NadekoLCR.Rob()));
+
+            //S
+            commands.Add(new Response()
+                .SetPrompts("self burn")
+                .SetResponses(NadekoLCR.SelfBurn()));
+
+            commands.Add(new Response()
+                .SetPrompts("shame")
+                .SetResponses(NadekoLCR.Shamne()));
+
+            commands.Add(new Response()
+                .SetPrompts("shhh")
+                .SetResponses(NadekoLCR.Shhh()));
+
+            commands.Add(new Response()
+                .SetPrompts("signal flags")
+                .SetResponses(NadekoLCR.SignalFlags()));
+
+            commands.Add(new Response()
+                .SetPrompts("slap chris")
+                .SetResponses(NadekoLCR.SlapChris()));
+
+            commands.Add(new Response()
+                .SetPrompts("stfu")
+                .SetResponses(NadekoLCR.STFU()));
+
+            commands.Add(new Response()
+                .SetPrompts("suck it")
+                .SetResponses(NadekoLCR.SuckIt()));
+
+            //T
+            commands.Add(new Response()
+                .SetPrompts("thank you bob")
+                .SetResponses(NadekoLCR.ThankYouBob()));
+
+            commands.Add(new Response()
+                .SetPrompts("that's fucking it")
+                .SetResponses(NadekoLCR.ThatsFuckingIt()));
+
+            commands.Add(new Response()
+                .SetPrompts("that's rough buddy", "zuko")
+                .SetResponses(NadekoLCR.ThatsRoughBuddy()));
+
+            commands.Add(new Response()
+                .SetPrompts("that's what she said")
+                .SetResponses(NadekoLCR.ThatsWhatSheSaid()));
+
+            commands.Add(new Response()
+                .SetPrompts("the beheaded")
+                .SetResponses(NadekoLCR.TheBeheaded()));
+
+            commands.Add(new Response()
+                .SetPrompts("the discord purge")
+                .SetResponses(NadekoLCR.TheDiscordPurge()));
+
+            commands.Add(new Response()
+                .SetPrompts("the worst")
+                .SetResponses(NadekoLCR.TheWorst()));
+
+            commands.Add(new Response()
+                .SetPrompts("this is the way")
+                .SetResponses(NadekoLCR.ThisIsTheWay()));
+
+            commands.Add(new Response()
+                .SetPrompts("time to work")
+                .SetResponses(NadekoLCR.TimeToWork()));
+
+            commands.Add(new Response()
+                .SetPrompts("tlj")
+                .SetResponses(NadekoLCR.TLJ()));
+
+            //U
+            commands.Add(new Response()
+                .SetPrompts("ugh")
+                .SetResponses(NadekoLCR.Ugh()));
+
+            commands.Add(new Response()
+                .SetPrompts("unacceptable")
+                .SetResponses(NadekoLCR.Unacceptable()));
+
+            commands.Add(new Response()
+                .SetPrompts("unlimited power")
+                .SetResponses(NadekoLCR.UnlimitedPower()));
+
+            //W
+            commands.Add(new Response()
+                .SetPrompts("wait...")
+                .SetResponses(NadekoLCR.Wait()));
+
+            commands.Add(new Response()
+                .SetPrompts("who gives a fuck")
+                .SetResponses(NadekoLCR.WhoGivesAFuck()));
+
+            commands.Add(new Response()
+                .SetPrompts("who the hell cares")
+                .SetResponses(NadekoLCR.WhoTheHellCares()));
+
+            commands.Add(new Response()
+                .SetPrompts("winston")
+                .SetResponses(NadekoLCR.Winston()));
+
+            commands.Add(new Response()
+                .SetPrompts("wtf")
+                .SetResponses(NadekoLCR.WTF()));
+
+            //Y
+            commands.Add(new Response()
+                .SetPrompts("yes, my liege")
+                .SetResponses(NadekoLCR.YesMyLiege()));
+
+            commands.Add(new Response()
+                .SetPrompts("you have no power here")
+                .SetResponses(NadekoLCR.YouHaveNoPowerHere()));
+
+            commands.Add(new Response()
+                .SetPrompts("you're a bitch")
+                .SetResponses(NadekoLCR.YoureaABitch()));
 
             SaveCustomReactions();
         }
@@ -712,6 +895,9 @@ namespace Bob_Biggby
         void UpdateCustomReactions()
         {
             commands.Clear();
+            CreateCustomReactions();
+
+            Console.WriteLine($"Custom Reactions was last modified {File.GetLastWriteTime(customReactionsDataPath)}. Current time is {DateTime.Now}");
         }
 
         void CustomReastionsEditTime()
@@ -852,15 +1038,9 @@ namespace Bob_Biggby
             //How do you do, fellow kids?
             "https://tenor.com/view/how-do-you-do-fellow-kids-steve-buscemi-30rock-fellow-kids-one-of-us-gif-21904018",
         };
-
         //Grumpy morning responses
         readonly String[] morning =
         {
-            "I'd rather be taking a nap",
-            "no, thank you",
-            "There's no such thing as a 'good' morning",
-            "unintelligble grunting",
-            
             //exhausted
             "https://tenor.com/view/tired-af-crying-sad-kid-baby-gif-16784052",
             //kid on swing
@@ -946,6 +1126,8 @@ namespace Bob_Biggby
         readonly String[] shakespeare1 = { "goatish", "mangled", "puny", "roguish", "reeky", "saucy", "weedy", "yeasty", "vallainous", "gleeking" };
         readonly String[] shakespeare2 = { "beef-witted", "clay-brained", "thin-skinned", "hedge-faced", "milk-livered", "fly-loving", "rump-fed", "toast-spotted", "weather-bitten", "fool-born" };
         readonly String[] shakespeare3 = { "barnacle", "boar-pig", "bum-bailey", "clot-pole", "foot-licker", "horn-beast", "maggot-pie", "malt-worm", "pumpkin", "whey-spiller" };
+        readonly String[] shakespearePhrases = { "What, you egg", "Villain, I have done thy mother", "You are a fishmonger", "Well. here is my leg", "Take you me for a sponge, my lord?", 
+            "Do you see yonder cloud that's almost in the shape of a camel?", "Eat my leek" };
 
         //String for regular insults
         readonly String[] regularInsults =
@@ -1124,6 +1306,29 @@ namespace Bob_Biggby
             "https://cdn.discordapp.com/attachments/951622505959919656/958798166956867684/unknown.png",
             //St. Diarrhea's Day Massacre
             "https://cdn.discordapp.com/attachments/951622505959919656/958799437797392434/unknown.png",
+        };
+
+        readonly String[] troubleshootingWheel =
+        {
+            "Reinstall it",
+            "Reboot", 
+            "Recreate profile", 
+            "Ignore the problem, see if it comes back", 
+            "Clear cached credentials", 
+            "Shut down the PC. Head home and don't come back",
+            "Go fuck yourself", 
+            "Make sure it's plugged in",
+            "Check for updates", 
+            "Is it wet?", 
+            "Try turning the volume up", 
+            "Try it in a different browser", 
+            "Reseat the cables",
+            "Uhhhhhhh (then hang up)", 
+            "Your problem is petty and you're wasting my time", 
+            "Lo siento no hablo ingles (hang up)",
+            "Oh I see we have an ID10t error",
+            "PEBCAC.PEBCAC.PEBCAC", 
+            "Try logging in again", 
         };
 
         #endregion Readonly Strings
@@ -1405,8 +1610,15 @@ namespace Bob_Biggby
                 int goodMorningChoice = random.Next(0, goodMorning.Length);
                 string msg;
 
+                //trimming excess characters
+                var also = "also ".ToCharArray();
+                var symbols = "!".ToCharArray();
+                var trim = lowmess.TrimStart(also);
+                var filterMessage = trim.TrimEnd(symbols);
+                Console.WriteLine($"filtered message: '{filterMessage}'");
+
                 //Grumpy
-                if (lowmess.Equals("morning") || lowmess.Equals("also morning") || lowmess.Equals("mornin"))
+                if (filterMessage.Equals("morning") || filterMessage.Equals("mornin"))
                 {
                     if (respondChoice == 0)
                     {
@@ -1422,9 +1634,7 @@ namespace Bob_Biggby
                 }
 
                 //Positive
-                else if (lowmess.Equals("good morning") || lowmess.Equals("also good morning") ||
-                        lowmess.Equals("good morning!") || lowmess.Equals("also good morning!") ||
-                        lowmess.Equals("morning!") || lowmess.Equals("also morning!") || lowmess.Equals("mornin!"))
+                else if (filterMessage.Equals("good morning") || filterMessage.Equals("good mornin"))
                 {
                     msg = $"{goodMorning[goodMorningChoice]}";
                     await message.Channel.SendMessageAsync(msg);
@@ -1761,6 +1971,15 @@ namespace Bob_Biggby
             {
                 await message.AddReactionAsync(thumbsupEmoji);
                 LunchReminder(message);
+            }
+
+            else if (lowmess.Equals("troubleshooting wheel"))
+            {
+                Random random = new Random();
+                int value = random.Next(0, troubleshootingWheel.Length);
+                var tip = ($"{troubleshootingWheel[value]}");
+
+                await message.Channel.SendMessageAsync(tip);                
             }
 
             #region Custom Points
@@ -2960,6 +3179,13 @@ namespace Bob_Biggby
                     }
                 }
                 //end of if("test")
+
+                else if (lowmess.Equals("update custom commands"))
+                {
+                    UpdateCustomReactions();
+
+                    await message.Channel.SendMessageAsync($"Custom Reactions was last modified {File.GetLastWriteTime(customReactionsDataPath)}. Current time is {DateTime.Now}");
+                }
 
                 else if (lowmess.Contains("time") || lowmess.Contains("date"))
                 {

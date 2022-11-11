@@ -78,6 +78,9 @@
       "bitch"
     ],
     "responses": [
+      //Suction Cup Korea gif, index: #37
+      "https://tenor.com/view/youre-a-bitch-jopstoffels-suctioncupman-gif-11942465",
+      //Suction Cup you're a bitch song, index: #38
       "https://www.youtube.com/watch?v=f9zpxWEweWc"
     ]
   },
@@ -167,6 +170,9 @@
       "dan w"
     ],
     "responses": [
+      //forest gump, index: j
+      "https://tenor.com/view/forrest-gump-forrest-gump-wave-hello-gif-13288735",
+      //panda being a dick, index: 3s
       "https://tenor.com/view/panda-cart-shopping-grocery-push-gif-17715527"
     ]
   },
@@ -199,6 +205,9 @@
       "dew it"
     ],
     "responses": [
+      //Dew it #1, index: f
+      "https://cdn.discordapp.com/attachments/895367300390211634/920741002120167514/viddit_d1c084fe.mp4",
+      //Dew it #2, index: #4n
       "https://cdn.discordapp.com/attachments/895367300390211634/941708551120887838/tiktok_1644336462238.mp4"
     ]
   },
@@ -207,7 +216,16 @@
       "do it"
     ],
     "responses": [
-      "https://tenor.com/view/do-it-shia-la-beouf-flame-gif-4445204"
+      //Dew it, #1, index: e
+      "https://cdn.discordapp.com/attachments/895367300390211634/920741002120167514/viddit_d1c084fe.mp4",
+      //Dew it #2, index: #4m
+      "https://cdn.discordapp.com/attachments/895367300390211634/941708551120887838/tiktok_1644336462238.mp4",
+      //Sheev, index: #g
+      "https://tenor.com/view/do-it-star-wars-gif-4928619",
+      //Shia, do it, index: h
+      "https://tenor.com/view/do-it-shia-la-beouf-flame-gif-4445204",
+      //Shia, what are you waiting for, index: #i
+      "https://tenor.com/view/do-it-what-are-you-waiting-for-determined-angry-gif-5247874"
     ]
   },
   {
@@ -289,10 +307,7 @@
       "fuck"
     ],
     "responses": [
-      //AoE2 Fuck Not Censored, index: 43
-      "https://media.discordapp.net/attachments/895367300390211634/931645134691516446/RDT_20220114_1524178313261399590404924.jpg",
-      //Witcher, index: 6q
-      "https://media.discordapp.net/attachments/895367300390211634/972388680033513563/443f76a3-466c-4063-80f3-926ee124bb06.gif"
+      "https://media.discordapp.net/attachments/895367300390211634/931645134691516446/RDT_20220114_1524178313261399590404924.jpg"
     ]
   },
   {
@@ -476,6 +491,9 @@
       "i understood that reference"
     ],
     "responses": [
+      //Captain America gif, index: #5a
+      "https://tenor.com/view/captain-america-i-understood-that-reference-look-back-gif-14556485",
+      //Captain America jpeg, index: 5b
       "https://media.discordapp.net/attachments/895367300390211634/949012494561718282/IMG_4229.jpg"
     ]
   },
@@ -540,6 +558,11 @@
       "it is done"
     ],
     "responses": [
+      //Frodo, index: #k
+      "https://tenor.com/view/finished-elijah-wood-lord-of-the-rings-lava-fire-gif-5894611",
+      //Kronk, index: #m
+      "https://tenor.com/view/victory-done-success-mission-accomplished-kronk-gif-4946910",
+      //Borat, index: 5u
       "https://tenor.com/view/success-great-job-nice-great-success-great-gif-5586706"
     ]
   },
@@ -648,6 +671,327 @@
     "responses": [
       "https://tenor.com/view/campesino-farmer-looking-sneaking-gif-14335387"
     ]
+  },
+  {
+    "prompts": [
+      "martin"
+    ],
+    "responses": [
+      "You mean the Director of Inclusion, Care, and Kindness? You can call him DICK for short"
+    ]
+  },
+  {
+    "prompts": [
+      "marty"
+    ],
+    "responses": [
+      "https://media.giphy.com/media/UrK4buqejkhK2NTFw9/giphy.gif"
+    ]
+  },
+  {
+    "prompts": [
+      "mild shock"
+    ],
+    "responses": [
+      "https://tenor.com/view/patrick-stewart-mild-shock-shocked-shock-mild-gif-5292523"
+    ]
+  },
+  {
+    "prompts": [
+      "noc"
+    ],
+    "responses": [
+      "https://tenor.com/view/nailed-it-three-pointer-basketball-whoosh-3pointer-gif-16331098"
+    ]
+  },
+  {
+    "prompts": [
+      "on site",
+      "onsite"
+    ],
+    "responses": [
+      "https://tenor.com/view/nailed-it-three-pointer-basketball-whoosh-3pointer-gif-16331098"
+    ]
+  },
+  {
+    "prompts": [
+      "oops"
+    ],
+    "responses": [
+      "https://tenor.com/view/made-a-huge-tiny-mistake-im-listening-huge-mistake-gif-14364427"
+    ]
+  },
+  {
+    "prompts": [
+      "oopsie"
+    ],
+    "responses": [
+      "https://tenor.com/view/dumb-stupid-stfu-peretti-b99-gif-5120485"
+    ]
+  },
+  {
+    "prompts": [
+      "panda rage"
+    ],
+    "responses": [
+      "https://media.discordapp.net/attachments/895346146313125898/908765386009370665/IMG_4908.gif"
+    ]
+  },
+  {
+    "prompts": [
+      "pebcac"
+    ],
+    "responses": [
+      "problem exists between computer and chair"
+    ]
+  },
+  {
+    "prompts": [
+      "praise the beheaded"
+    ],
+    "responses": [
+      "https://tenor.com/view/pray-the-sun-dead-cells-gif-19409747"
+    ]
+  },
+  {
+    "prompts": [
+      "praise the sun"
+    ],
+    "responses": [
+      "https://www.youtube.com/watch?v=So5hTxKmPrA&list=PLrvVfo9ufJZcj9YjUJx8AagyhBHFpZjgV&index=31"
+    ]
+  },
+  {
+    "prompts": [
+      "rob"
+    ],
+    "responses": [
+      "https://tenor.com/view/sad-gif-24073087"
+    ]
+  },
+  {
+    "prompts": [
+      "self burn"
+    ],
+    "responses": [
+      "https://tenor.com/view/self-burn-brooklyn-nine-rare-andy-samberg-detective-jake-peralta-gif-5606998"
+    ]
+  },
+  {
+    "prompts": [
+      "shame"
+    ],
+    "responses": [
+      "https://tenor.com/view/shame-game-of-thrones-gif-11381550"
+    ]
+  },
+  {
+    "prompts": [
+      "shhh"
+    ],
+    "responses": [
+      "https://cdn.discordapp.com/attachments/895367300390211634/955910175951294604/x4cHkTBUQHob3cZRWE_1.gif"
+    ]
+  },
+  {
+    "prompts": [
+      "signal flags"
+    ],
+    "responses": [
+      "https://en.wikipedia.org/wiki/International_maritime_signal_flags"
+    ]
+  },
+  {
+    "prompts": [
+      "slap chris"
+    ],
+    "responses": [
+      "https://slapchris.com/"
+    ]
+  },
+  {
+    "prompts": [
+      "stfu"
+    ],
+    "responses": [
+      "https://www.youtube.com/watch?v=OLpeX4RRo28"
+    ]
+  },
+  {
+    "prompts": [
+      "suck it"
+    ],
+    "responses": [
+      "https://tenor.com/view/ruxin-the-league-suck-it-commissioner-gif-5003995"
+    ]
+  },
+  {
+    "prompts": [
+      "thank you bob"
+    ],
+    "responses": [
+      "you're welcome"
+    ]
+  },
+  {
+    "prompts": [
+      "that's fucking it"
+    ],
+    "responses": [
+      "https://cdn.discordapp.com/attachments/902629594564296725/948207664125599814/61160522_2454260577925971_913587187931414528_n.jpg"
+    ]
+  },
+  {
+    "prompts": [
+      "that's rough buddy",
+      "zuko"
+    ],
+    "responses": [
+      "https://tenor.com/view/thats-rough-buddy-avatar-the-last-airbender-zuko-gif-17596756"
+    ]
+  },
+  {
+    "prompts": [
+      "that's what she said"
+    ],
+    "responses": [
+      "https://tenor.com/view/steve-carell-the-office-thats-what-she-said-gif-8356135"
+    ]
+  },
+  {
+    "prompts": [
+      "the beheaded"
+    ],
+    "responses": [
+      "https://tenor.com/view/dead-cells-middle-finger-fuck-you-gif-15761204"
+    ]
+  },
+  {
+    "prompts": [
+      "the discord purge"
+    ],
+    "responses": [
+      "https://tenor.com/view/purge-design-weapons-destruction-gif-5999223"
+    ]
+  },
+  {
+    "prompts": [
+      "the worst"
+    ],
+    "responses": [
+      "https://tenor.com/view/the-worst-gif-13248078"
+    ]
+  },
+  {
+    "prompts": [
+      "this is the way"
+    ],
+    "responses": [
+      "https://tenor.com/view/mando-way-this-is-the-way-mandalorian-star-wars-gif-18467370"
+    ]
+  },
+  {
+    "prompts": [
+      "time to work"
+    ],
+    "responses": [
+      "https://tenor.com/view/working-work-gif-20073706"
+    ]
+  },
+  {
+    "prompts": [
+      "tlj"
+    ],
+    "responses": [
+      "https://cdn.discordapp.com/attachments/895367300390211634/925115018331172905/IMG_3701.jpg"
+    ]
+  },
+  {
+    "prompts": [
+      "ugh"
+    ],
+    "responses": [
+      "https://tenor.com/view/ugh-no-why-me-annoyed-gif-12005705"
+    ]
+  },
+  {
+    "prompts": [
+      "unacceptable"
+    ],
+    "responses": [
+      "https://tenor.com/view/unacceptable-adventure-time-lemongrab-freakout-armflail-gif-5515437"
+    ]
+  },
+  {
+    "prompts": [
+      "unlimited power"
+    ],
+    "responses": [
+      "https://tenor.com/view/unlimited-power-star-wars-gif-10270127"
+    ]
+  },
+  {
+    "prompts": [
+      "wait..."
+    ],
+    "responses": [
+      "https://cdn.discordapp.com/attachments/895367300390211634/925133556848660550/41020a6.gif"
+    ]
+  },
+  {
+    "prompts": [
+      "who gives a fuck"
+    ],
+    "responses": [
+      "https://media.discordapp.net/attachments/895367300390211634/958932253596069949/chris-pratt-who-gives-a-fuck.gif"
+    ]
+  },
+  {
+    "prompts": [
+      "who the hell cares"
+    ],
+    "responses": [
+      "https://cdn.discordapp.com/attachments/895367300390211634/959133120970489908/viddit_37b34f8b.gif"
+    ]
+  },
+  {
+    "prompts": [
+      "winston"
+    ],
+    "responses": [
+      "https://cdn.discordapp.com/attachments/895367300390211634/964237663060246578/IMG_2918.gif"
+    ]
+  },
+  {
+    "prompts": [
+      "wtf"
+    ],
+    "responses": [
+      "https://cdn.discordapp.com/attachments/989223734781018112/1009941343243599972/wtf_spiderman_4e.jpg"
+    ]
+  },
+  {
+    "prompts": [
+      "yes, my liege"
+    ],
+    "responses": [
+      "https://cdn.discordapp.com/attachments/948590685056040970/952070092689117235/RDT_20220312_0006067869055844959929244.jpg"
+    ]
+  },
+  {
+    "prompts": [
+      "you have no power here"
+    ],
+    "responses": [
+      "https://media.discordapp.net/attachments/720505313085620286/972737120777171014/L0coY9I1D2BnaKln9a.gif"
+    ]
+  },
+  {
+    "prompts": [
+      "you're a bitch"
+    ],
+    "responses": [
+      "https://cdn.discordapp.com/attachments/902629594564296725/936617850880286780/A_Special_Song_Just_For_You.webm"
+    ]
   }
-
 ]
