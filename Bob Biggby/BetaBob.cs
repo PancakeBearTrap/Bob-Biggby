@@ -140,7 +140,6 @@ namespace Bob_Biggby
 
             Start();
             StartProactive();
-            StartNadeko();
             StartCustomReactions();
 
             //This makes Bob use token.txt to get the bot token instead of putting the token directly into the code
@@ -251,93 +250,6 @@ namespace Bob_Biggby
         }
 
         #endregion Proactive Voids
-
-        #region Nadeko Voids
-        //Start for Beta Bob
-        void StartNadeko()
-        {
-            nadekoDataPath = Path.Combine(basePath, "Nadeko.json");
-
-            if (File.Exists(nadekoDataPath))
-                LoadNadeko();
-            else
-                CreateNadeko();
-        }
-
-        //VanillaBob list
-        void CreateNadeko()
-        {
-            nadekoCommands.Add(new PeopleList.Nadeko("bf"));
-            nadekoCommands.Add(new PeopleList.Nadeko("bitch"));
-            nadekoCommands.Add(new PeopleList.Nadeko("bones day"));
-            nadekoCommands.Add(new PeopleList.Nadeko("boss man"));
-            nadekoCommands.Add(new PeopleList.Nadeko("comms"));
-            nadekoCommands.Add(new PeopleList.Nadeko("custodian"));
-            nadekoCommands.Add(new PeopleList.Nadeko("dan w"));
-            nadekoCommands.Add(new PeopleList.Nadeko("daniel"));
-            nadekoCommands.Add(new PeopleList.Nadeko("dew it"));
-            nadekoCommands.Add(new PeopleList.Nadeko("do it"));
-            nadekoCommands.Add(new PeopleList.Nadeko("eat a chode"));
-            nadekoCommands.Add(new PeopleList.Nadeko("eat a dick"));
-            nadekoCommands.Add(new PeopleList.Nadeko("email the user"));
-            nadekoCommands.Add(new PeopleList.Nadeko("escalate"));
-            nadekoCommands.Add(new PeopleList.Nadeko("ew"));
-            nadekoCommands.Add(new PeopleList.Nadeko("extended it alignments"));
-            nadekoCommands.Add(new PeopleList.Nadeko("fresh prince"));
-            nadekoCommands.Add(new PeopleList.Nadeko("fuck"));
-            nadekoCommands.Add(new PeopleList.Nadeko("fuck you"));
-            nadekoCommands.Add(new PeopleList.Nadeko("general kenobi"));
-            nadekoCommands.Add(new PeopleList.Nadeko("haha good one"));
-            nadekoCommands.Add(new PeopleList.Nadeko("hello there"));
-            nadekoCommands.Add(new PeopleList.Nadeko("help desk main line"));
-            nadekoCommands.Add(new PeopleList.Nadeko("help me"));
-            nadekoCommands.Add(new PeopleList.Nadeko("hmm no"));
-            nadekoCommands.Add(new PeopleList.Nadeko("how dare you"));
-            nadekoCommands.Add(new PeopleList.Nadeko("inappropriate gif", $"https://tenor.com/view/balls-sucking-cherry-lick-his-nuts-gif-15332077"));
-            nadekoCommands.Add(new PeopleList.Nadeko("I own you"));
-            nadekoCommands.Add(new PeopleList.Nadeko("I'll allow it"));
-            nadekoCommands.Add(new PeopleList.Nadeko("I'm busy"));
-            nadekoCommands.Add(new PeopleList.Nadeko("I'm disappointed"));
-            nadekoCommands.Add(new PeopleList.Nadeko("I'm fine"));
-            nadekoCommands.Add(new PeopleList.Nadeko("I'm totally working"));
-            nadekoCommands.Add(new PeopleList.Nadeko("it is decided"));
-            nadekoCommands.Add(new PeopleList.Nadeko("it is done"));
-            nadekoCommands.Add(new PeopleList.Nadeko("it's friday"));
-            nadekoCommands.Add(new PeopleList.Nadeko("it's friday losers"));
-            nadekoCommands.Add(new PeopleList.Nadeko("it's time to press buttons"));
-            nadekoCommands.Add(new PeopleList.Nadeko("joe"));
-            nadekoCommands.Add(new PeopleList.Nadeko("kikki", "kikko"));
-            nadekoCommands.Add(new PeopleList.Nadeko("know your place"));
-            nadekoCommands.Add(new PeopleList.Nadeko("larson"));
-            nadekoCommands.Add(new PeopleList.Nadeko("martin"));
-            nadekoCommands.Add(new PeopleList.Nadeko("marty"));
-            nadekoCommands.Add(new PeopleList.Nadeko("oops"));
-            nadekoCommands.Add(new PeopleList.Nadeko("oopsie"));
-            nadekoCommands.Add(new PeopleList.Nadeko("praise the sun"));
-            nadekoCommands.Add(new PeopleList.Nadeko("shame"));
-            nadekoCommands.Add(new PeopleList.Nadeko("signal flags"));
-            nadekoCommands.Add(new PeopleList.Nadeko("stfu"));
-            nadekoCommands.Add(new PeopleList.Nadeko("thank you bob"));
-            nadekoCommands.Add(new PeopleList.Nadeko("tlj"));
-            nadekoCommands.Add(new PeopleList.Nadeko("unacceptable"));
-            nadekoCommands.Add(new PeopleList.Nadeko("wait..."));
-            nadekoCommands.Add(new PeopleList.Nadeko("will"));
-            nadekoCommands.Add(new PeopleList.Nadeko("wtf"));
-            SaveNadeko();
-        }
-
-        //Saves Vanilla Bob
-        void SaveNadeko()
-        {
-            File.WriteAllText(nadekoDataPath, JsonConvert.SerializeObject(nadekoCommands, Newtonsoft.Json.Formatting.Indented));
-        }
-
-        void LoadNadeko()
-        {
-            nadekoCommands = JsonConvert.DeserializeObject<List<PeopleList.Nadeko>>(File.ReadAllText(nadekoDataPath));
-        }
-
-        #endregion Nadeko Voids
 
         #region Custom Reactions Voids
         //Start for Custom Reactions
