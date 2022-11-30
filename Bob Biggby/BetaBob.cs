@@ -123,7 +123,6 @@ namespace Bob_Biggby
         string basePath;
         string peopleDataPath;
         string proactiveDataPath;
-        string nadekoDataPath;
         string customReactionsDataPath;
 
         public async Task RunBotAsync()
@@ -490,10 +489,11 @@ namespace Bob_Biggby
             commands.Add(new Response()
                 .SetPrompts("help me")
                 .SetResponses(NadekoLCR.HelpMe()));
-
-            commands.Add(new Response()
-                .SetPrompts("hey bob")
-                .SetResponses(NadekoLCR.HeyBob()));
+            
+            ///here strictly for bookmarking
+            //commands.Add(new Response()
+                //.SetPrompts("hey bob")
+                //.SetResponses(NadekoLCR.HeyBob()));
 
             commands.Add(new Response()
                 .SetPrompts("hmm no")
@@ -1434,8 +1434,8 @@ namespace Bob_Biggby
             /// reacting to messages: message.AddReactionAsync([emote]);
             /// </summary>
 
-            //this is for when you run beta bob outside of Anton v1
-            //OnGetMessage(message);
+            //this is for if Nadeko doesn't have all the commands
+            OnGetMessage(message);
 
             //Command prefix for Bob. Bob's version of '.' for Nadeko
             if (message.HasStringPrefix("+", ref argPos))
