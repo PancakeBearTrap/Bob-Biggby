@@ -602,12 +602,13 @@ namespace CustomReactions
             return helpMe;
         }
 
-        public static string HeyBob()
-        {
-            //index: 7a
-            string heyBob = "Alpha Bob reporting for duty";
-            return heyBob;
-        }
+        /// bookmark only
+        //public static string HeyBob()
+        //{
+        //    //index: 7a
+        //    string heyBob = "Alpha Bob reporting for duty";
+        //    return heyBob;
+        //}
 
         //transfer to DB
         public static string HmmNo()
