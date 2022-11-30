@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using CustomReactions;
+using System.Web.WebPages;
 
 //Discord
 using Discord;
@@ -1433,7 +1434,8 @@ namespace Bob_Biggby
             /// reacting to messages: message.AddReactionAsync([emote]);
             /// </summary>
 
-            OnGetMessage(message);
+            //this is for when you run beta bob outside of Anton v1
+            //OnGetMessage(message);
 
             //Command prefix for Bob. Bob's version of '.' for Nadeko
             if (message.HasStringPrefix("+", ref argPos))
@@ -1554,13 +1556,13 @@ namespace Bob_Biggby
             }
 
             //You're wrong
-            else if (lowmess.Contains("you're wrong"))
+            else if (lowmess.Equals("you're wrong"))
             {
                 await message.Channel.SendMessageAsync("https://www.youtube.com/watch?v=GM-e46xdcUo&ab_channel=wintermoot");
             }
 
             //Your Opinion
-            else if (lowmess.Contains("that's your opinion"))
+            else if (lowmess.Equals("that's your opinion"))
             {
                 await message.Channel.SendMessageAsync("https://cdn.discordapp.com/attachments/894991535542788137/900786985747243038/download_1.png");
             }
@@ -1581,6 +1583,35 @@ namespace Bob_Biggby
             //Willy P and Willie 
             else if (lowmess.Contains("willy p") || lowmess.Contains("willie"))
             {
+                //tests for URL
+                try
+                {
+                    WebRequest url = WebRequest.Create(lowmess);
+                    WebResponse request = url.GetResponse();
+
+                    if (request.SupportsHeaders)
+                    {
+                        return;
+                    }
+                }
+                //tests for file
+                catch (FormatException)
+                {
+                    try
+                    {
+                        FileInfo file = new FileInfo(lowmess);
+                        bool exists = file.Exists;
+                        if (exists)
+                        {
+                            return;
+                        }
+                    }
+                    catch (FormatException)
+                    {
+                        return;
+                    }
+                }
+
                 await message.Channel.SendMessageAsync("https://tenor.com/view/officer-doofy-salute-goofy-gif-15829687");
             }
 
