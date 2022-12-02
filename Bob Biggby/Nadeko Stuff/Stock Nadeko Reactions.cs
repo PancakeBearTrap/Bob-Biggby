@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Nadeko_Stuff
+﻿namespace Nadeko_Stuff
 {
     internal class StockNadekoReactions
     {
-        
+
     }
 }

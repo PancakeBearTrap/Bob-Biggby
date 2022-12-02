@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Discord;
-using Discord.Net;
-using Discord.Commands;
-using Discord.WebSocket;
-using System.Threading.Tasks;
+﻿using Discord.WebSocket;
 
 namespace GlobalShortcuts
 {
@@ -14,13 +8,13 @@ namespace GlobalShortcuts
 
         #region Server IDs
         //Pumphouse
-        public static bool IsPumphouse (SocketGuild server)
+        public static bool IsPumphouse(SocketGuild server)
         {
             return server.Id == 353250534464946176;
         }
 
         //Emote Server
-        public static bool IsEmoteServer (SocketGuild server)
+        public static bool IsEmoteServer(SocketGuild server)
         {
             return server.Id == 818717736367947776;
         }
@@ -126,7 +120,7 @@ namespace GlobalShortcuts
                 user.Id == 894987795058290688 ||
                 //Joe
                 user.Id == 382192994683715584 ||
-                
+
                 //Non mods
                 //Becky
                 user.Id == 789985474600763412 ||
@@ -260,7 +254,7 @@ namespace GlobalShortcuts
             return
                 channel.Id == 1037109157750374482;
         }
-        
+
 
         // Fun Zone
         // Version 6

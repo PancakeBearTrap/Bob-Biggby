@@ -1,9 +1,6 @@
-﻿using System;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
+﻿using Discord.Commands;
+using System;
 using System.Threading.Tasks;
-using Discord.Commands;
 
 namespace CustomReactions
 {
@@ -23,8 +20,8 @@ namespace CustomReactions
         readonly String[] NeedsNewLink =
         {
             "comms", "comms",
-            "dann", 
-            "email the user", 
+            "dann",
+            "email the user",
             "it's friday losers",
             "yes, my liege",
         };
@@ -608,7 +605,7 @@ namespace CustomReactions
         public async Task ItIsDone()
         {
             //String order: Frodo, Kronk
-            String[] itIsDone = 
+            String[] itIsDone =
             {
                 //Frodo, index: #k
                 "https://tenor.com/view/finished-elijah-wood-lord-of-the-rings-lava-fire-gif-5894611",
@@ -705,7 +702,7 @@ namespace CustomReactions
             await ReplyAsync("https://tenor.com/view/no-randy-jackson-dawg-gif-12730917");
         }
 
-        [Command ("loveall")]
+        [Command("loveall")]
         public async Task Loveall()
         {
             await ReplyAsync("https://tenor.com/view/campesino-farmer-looking-sneaking-gif-14335387");

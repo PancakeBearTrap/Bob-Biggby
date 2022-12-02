@@ -12,7 +12,7 @@
         Hank,
         larsoneyes,
         martin,
-        martin_heart,        
+        martin_heart,
         monster,
         no,
         omegaroll,
@@ -26,7 +26,7 @@
     public enum PumphouseEmotesEnum
     {
         EvilZorra,
-        SakamotoDab,        
+        SakamotoDab,
         solaire,
     }
 

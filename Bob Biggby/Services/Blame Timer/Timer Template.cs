@@ -31,7 +31,7 @@ namespace GlobalServices
             Console.WriteLine("\nDestroying timer.\n");
         }
     }
-    
+
     public class StatusCheckerTemplate
 
     {

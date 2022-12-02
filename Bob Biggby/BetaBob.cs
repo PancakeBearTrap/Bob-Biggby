@@ -1,37 +1,20 @@
 ﻿//System
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using System.Text.RegularExpressions;
 using CustomReactions;
-using System.Web.WebPages;
-
 //Discord
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
-
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 //Usings not used
-using System.Collections;
-using System.Globalization;
-using System.Net.Http;
 using System.Net;
-using System.Runtime;
-using System.Text;
-using System.Threading;
-using System.Timers;
-using System.Xml;
-using Discord.Net;
-using System.Net.Http.Headers;
-using System.Security.Cryptography.X509Certificates;
-using System.Windows.Forms;
-using System.Windows.Interop;
-using Discord.Rest;
+using System.Reflection;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 //Current Version, Desktop 2.8
 
@@ -258,7 +241,7 @@ namespace Bob_Biggby
             customReactionsDataPath = Path.Combine(basePath, "customReactionsPath.json");
 
             var lastEdit = DateTime.Now;
-            
+
             if (File.Exists(customReactionsDataPath))
             {
                 Console.WriteLine($"Custom Reactions was last modified {File.GetLastWriteTime(customReactionsDataPath)}. Current time is {DateTime.Now}");
@@ -489,11 +472,11 @@ namespace Bob_Biggby
             commands.Add(new Response()
                 .SetPrompts("help me")
                 .SetResponses(NadekoLCR.HelpMe()));
-            
+
             ///here strictly for bookmarking
             //commands.Add(new Response()
-                //.SetPrompts("hey bob")
-                //.SetResponses(NadekoLCR.HeyBob()));
+            //.SetPrompts("hey bob")
+            //.SetResponses(NadekoLCR.HeyBob()));
 
             commands.Add(new Response()
                 .SetPrompts("hmm no")
@@ -973,7 +956,7 @@ namespace Bob_Biggby
         };
 
         //String for people
-        readonly String[] peopleNameList = 
+        readonly String[] peopleNameList =
         {
             "Becky",
             "Brittney",
@@ -994,7 +977,7 @@ namespace Bob_Biggby
             "NOC",
             "Willie P"
         };
-        readonly String[] proactiveNameList = 
+        readonly String[] proactiveNameList =
         {
             "Brittney",
             "Brandon",
@@ -1041,7 +1024,7 @@ namespace Bob_Biggby
         readonly String[] shakespeare1 = { "goatish", "mangled", "puny", "roguish", "reeky", "saucy", "weedy", "yeasty", "vallainous", "gleeking" };
         readonly String[] shakespeare2 = { "beef-witted", "clay-brained", "thin-skinned", "hedge-faced", "milk-livered", "fly-loving", "rump-fed", "toast-spotted", "weather-bitten", "fool-born" };
         readonly String[] shakespeare3 = { "barnacle", "boar-pig", "bum-bailey", "clot-pole", "foot-licker", "horn-beast", "maggot-pie", "malt-worm", "pumpkin", "whey-spiller" };
-        readonly String[] shakespearePhrases = { "What, you egg", "Villain, I have done thy mother", "You are a fishmonger", "Well. here is my leg", "Take you me for a sponge, my lord?", 
+        readonly String[] shakespearePhrases = { "What, you egg", "Villain, I have done thy mother", "You are a fishmonger", "Well. here is my leg", "Take you me for a sponge, my lord?",
             "Do you see yonder cloud that's almost in the shape of a camel?", "Eat my leek" };
 
         //String for regular insults
@@ -1226,24 +1209,24 @@ namespace Bob_Biggby
         readonly String[] troubleshootingWheel =
         {
             "Reinstall it",
-            "Reboot", 
-            "Recreate profile", 
-            "Ignore the problem, see if it comes back", 
-            "Clear cached credentials", 
+            "Reboot",
+            "Recreate profile",
+            "Ignore the problem, see if it comes back",
+            "Clear cached credentials",
             "Shut down the PC. Head home and don't come back",
-            "Go fuck yourself", 
+            "Go fuck yourself",
             "Make sure it's plugged in",
-            "Check for updates", 
-            "Is it wet?", 
-            "Try turning the volume up", 
-            "Try it in a different browser", 
+            "Check for updates",
+            "Is it wet?",
+            "Try turning the volume up",
+            "Try it in a different browser",
             "Reseat the cables",
-            "Uhhhhhhh (then hang up)", 
-            "Your problem is petty and you're wasting my time", 
+            "Uhhhhhhh (then hang up)",
+            "Your problem is petty and you're wasting my time",
             "Lo siento no hablo ingles (hang up)",
             "Oh I see we have an ID10t error",
-            "PEBCAC.PEBCAC.PEBCAC", 
-            "Try logging in again", 
+            "PEBCAC.PEBCAC.PEBCAC",
+            "Try logging in again",
         };
 
         #endregion Readonly Strings
@@ -1257,7 +1240,7 @@ namespace Bob_Biggby
             {
                 return;
             };
-            int argPos = 0;            
+            int argPos = 0;
 
             //converts the input to a string, since it comes in as "socketusermessage"
             string stringmessage = message.ToString();
@@ -1360,7 +1343,7 @@ namespace Bob_Biggby
             /// If you wanna send an emote as a message or reaction, Bob has to be apart of that server
             /// To send an emote as a message, use $"{emote}" 
             ///</summary>
-            
+
             #region Global Emotes 
             //Global emotes
             var thumbsupEmoji = new Emoji("\uD83D\uDC4D");
@@ -1478,7 +1461,7 @@ namespace Bob_Biggby
             {
 
                 //Insult choices
-                String[] respondOptions = { "irish curse", "shakespeare", "regular insults"};
+                String[] respondOptions = { "irish curse", "shakespeare", "regular insults" };
                 var insult = "I insult you";
 
                 //Bob decides how to respond
@@ -1653,7 +1636,7 @@ namespace Bob_Biggby
                     //Gun wall 2
                     "https://cdn.discordapp.com/attachments/920025341341351947/945739749992329256/modwall-config-front-highres-008-800x630.png",
                 };
-                
+
                 Random random = new Random();
                 var value = random.Next(0, spankBank.Length);
                 await message.Channel.SendMessageAsync(spankBank[value]);
@@ -1670,9 +1653,9 @@ namespace Bob_Biggby
             //Quickbooks
             else if (lowmess.Contains("quickbooks"))
             {
-                String[] quickbooks = 
-                { 
-                    "https://media.giphy.com/media/QvF8DglKNi3GwG5WIN/giphy-downsized-large.gif", 
+                String[] quickbooks =
+                {
+                    "https://media.giphy.com/media/QvF8DglKNi3GwG5WIN/giphy-downsized-large.gif",
                     "https://media.giphy.com/media/hTovQQU3dBiE6mmNkJ/giphy.gif"
                 };
 
@@ -1720,7 +1703,7 @@ namespace Bob_Biggby
                 //Silence, index: #t
                 "https://media.giphy.com/media/ZXIaNe5qervdfZuBvM/giphy.gif",
                 //Sandler, index: #3j
-                "https://tenor.com/view/uncut-gems-cum-gif-18874799", 
+                "https://tenor.com/view/uncut-gems-cum-gif-18874799",
                 };
 
                 if (lowmess.Equals("will"))
@@ -1837,17 +1820,17 @@ namespace Bob_Biggby
                     //Strings
                     String[] respondOptions = { "polite", "rude", };
 
-                    String[] polite = 
-                    { 
-                        "hello there", 
-                        "yes?", 
-                        "how can I help you?", 
+                    String[] polite =
+                    {
+                        "hello there",
+                        "yes?",
+                        "how can I help you?",
                     };
 
-                    String[] rude = 
+                    String[] rude =
                     {
-                        "the fuck do you want?", 
-                        $"{FuckYou}", 
+                        "the fuck do you want?",
+                        $"{FuckYou}",
                     };
                     var bobResponse = "hello";
 
@@ -1926,7 +1909,7 @@ namespace Bob_Biggby
                 int value = random.Next(0, troubleshootingWheel.Length);
                 var tip = ($"{troubleshootingWheel[value]}");
 
-                await message.Channel.SendMessageAsync(tip);                
+                await message.Channel.SendMessageAsync(tip);
             }
 
             #region Custom Points
@@ -2839,7 +2822,7 @@ namespace Bob_Biggby
                         }//End Joe Points count
 
                         //Blame count
-                        else if (lowmess.IndexOf($"{name}'s blame count", StringComparison.OrdinalIgnoreCase) >= 0 || 
+                        else if (lowmess.IndexOf($"{name}'s blame count", StringComparison.OrdinalIgnoreCase) >= 0 ||
                                  lowmess.IndexOf($"{name}'s fault count", StringComparison.OrdinalIgnoreCase) >= 0)
                         {
                             var text = $"{name} has been blamed {person.blameCount} times";
@@ -2860,7 +2843,7 @@ namespace Bob_Biggby
                 }//End JP and Blame
                 /// end of person foreach
                 /// End of Joe Points and Blame count
-                
+
             }
             //End of Points Count
 
@@ -2908,7 +2891,7 @@ namespace Bob_Biggby
                                     await message.Channel.SendMessageAsync($"{text}");
                                     SavePeople();
                                 }
-                                
+
                                 //Sass when anyone else is blamed
                                 else
                                 {
@@ -2957,7 +2940,7 @@ namespace Bob_Biggby
 
                             foundMatch = true;
                             break;
-                        } 
+                        }
                         //End blaming someone
 
                         //Clearing blame
@@ -2974,16 +2957,16 @@ namespace Bob_Biggby
                                 break;
                             }
 
-                        } 
+                        }
                         //End clearing blame
-                    } 
+                    }
                     //end of 2nd foreach
                     if (foundMatch)
                         break;
 
-                } 
+                }
                 //end of 1st foreach
-            } 
+            }
             //End Blame
 
             #endregion Custom Points
@@ -3076,7 +3059,7 @@ namespace Bob_Biggby
                     {
                         case 0:
                             await message.Channel.SendMessageAsync("case 0");
-                            break; 
+                            break;
 
                         case 1:
                             await message.Channel.SendMessageAsync("case 1");
