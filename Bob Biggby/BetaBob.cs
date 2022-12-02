@@ -1,16 +1,17 @@
-﻿//System
+﻿//Namespace
 using CustomReactions;
 //Discord
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+//Microsoft
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+//System
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-//Usings not used
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
