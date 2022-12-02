@@ -866,10 +866,13 @@ namespace Bob_Biggby
         //Bob's Custom Reactions
         public void OnGetMessage(SocketUserMessage userMessage)
         {
+            Console.WriteLine($"OnGetMessage triggered with userMessage: '{userMessage}'");
             foreach (var r in commands)
             {
+                Console.WriteLine($"Searching in r: '{r}' for usermessage: '{userMessage}'");
                 if (r.MessageMatches(userMessage))
                 {
+                    Console.WriteLine($"match found in r '{r}' with userMessage: '{userMessage}'");
                     break;
                 }
             }
