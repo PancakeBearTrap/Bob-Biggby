@@ -869,7 +869,6 @@ namespace Bob_Biggby
             Console.WriteLine($"OnGetMessage triggered with userMessage: '{userMessage}'");
             foreach (var r in commands)
             {
-                Console.WriteLine($"Searching in r: '{r}' for usermessage: '{userMessage}'");
                 if (r.MessageMatches(userMessage))
                 {
                     Console.WriteLine($"match found in r '{r}' with userMessage: '{userMessage}'");
@@ -1439,7 +1438,8 @@ namespace Bob_Biggby
 
             //this is for if Nadeko doesn't have all the commands
             OnGetMessage(message);
-            Console.WriteLine($"message: {message}");
+            Console.WriteLine($"message: '{message}'");
+            Console.WriteLine($"lowmess: '{lowmess}'");
 
             //Command prefix for Bob. Bob's version of '.' for Nadeko
             if (message.HasStringPrefix("+", ref argPos))
