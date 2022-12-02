@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Windows.Forms;
 
 namespace GlobalShortcuts
 {
@@ -97,7 +96,7 @@ namespace GlobalShortcuts
 
                 case GlobalEnums.IBSEmotesEnum.larsoneyes:
                     msg = "<:larsoneyes:895358866567610388>";
-                    break; 
+                    break;
 
                 case GlobalEnums.IBSEmotesEnum.martin:
                     msg = "<:martin:894997334793003028>";

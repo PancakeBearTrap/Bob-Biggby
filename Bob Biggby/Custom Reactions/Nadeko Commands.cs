@@ -1,38 +1,9 @@
 ﻿//System
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Security.Policy;
-using System.Threading.Tasks;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Windows.Forms;
 
 //Discord
-using Discord;
-using Discord.Commands;
-using Discord.WebSocket;
-using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
 
 //Usings not used
-using Bob_Biggby;
-using System.Collections;
-using System.Globalization;
-using System.Net.Http;
-using System.Net;
-using System.Runtime;
-using System.Threading;
-using System.Timers;
-using System.Xml;
-using Discord.Net;
-using System.Net.Http.Headers;
-using CustomReactions;
-using System.Security.Cryptography.X509Certificates;
-using System.Windows.Interop;
-using System.IO.Packaging;
 
 namespace CustomReactions
 {
@@ -49,7 +20,7 @@ namespace CustomReactions
 
         readonly String[] NeedsNewLink =
         {
-            "comms", "comms", 
+            "comms", "comms",
             "dann",
             "email the user",
             "it's friday losers",
@@ -67,7 +38,7 @@ namespace CustomReactions
             //C
             "can it wait for a bit?", "castle", "check the handbook", "chloe price", "custodian",
             //D
-            "dab", "dan", 
+            "dab", "dan",
             "dan w", "dan w",
             "daniel", "dann", "darth maul", "deal with it", "dennis",
             "dew it", "dew it",
@@ -75,8 +46,8 @@ namespace CustomReactions
             //E
             "eat a chode", "eat a dick", "escalate", "ess", "ew", "excellent", "extended it alignments",
             //F
-            "fresh prince", 
-            "fuck", "fuck", 
+            "fresh prince",
+            "fuck", "fuck",
             "fuck off", "fuck that",
             "fuck you", "fuck you", "fuck you",
             "fc3 fuck you",
@@ -87,7 +58,7 @@ namespace CustomReactions
             "how dare you", "'https://tenor.com/view/balls-sucking-cherry-lick-his-nuts-gif-15332077'",
             //I
             "I am untethered", "I am untethered and my rage knows no bounds",
-            "I can do this all day", "I have spoken", "I know some of those words", "I know where it is", "I own you", "I quit", 
+            "I can do this all day", "I have spoken", "I know some of those words", "I know where it is", "I own you", "I quit",
             "I understand that reference", "I understand that reference",
             "I understood that reference", "I understood that reference",
             "I'll allow it", "I'll just leave", "I'm disappointed", "I'm fine", "I'm totally working", "I'm watching you", "it is decided",
@@ -132,7 +103,7 @@ namespace CustomReactions
             //index: 69
             string msg = "https://tenor.com/view/jessica-jones-krysten-ritter-eye-roll-ugh-so-done-gif-8657077";
             return msg;
-        }        
+        }
 
         public static string Frown()
         {
@@ -189,7 +160,7 @@ namespace CustomReactions
         //2 responses
         public static string Bitch()
         {
-            String[] msg = 
+            String[] msg =
             {
                 //Suction Cup Korea gif, index: #37
                 "https://tenor.com/view/youre-a-bitch-jopstoffels-suctioncupman-gif-11942465",
@@ -261,7 +232,7 @@ namespace CustomReactions
         //2 responses
         //both have been deleted due to source image being deleted from purge
         public static string Comms()
-        {            
+        {
             String[] msg =
             {
                 //autotask, index: 3f
@@ -377,7 +348,7 @@ namespace CustomReactions
         public static string DoIt()
         {
             //String in order: dew it, palpatine, Shia "Do it", Shia "What are you waiting for"
-            String[] msg = 
+            String[] msg =
             {
                 //Dew it, #1, index: e
                 "https://cdn.discordapp.com/attachments/895367300390211634/920741002120167514/viddit_d1c084fe.mp4",
@@ -514,7 +485,7 @@ namespace CustomReactions
         //In Pumphouse DB
         public static string FuckYou()
         {
-            String[] msg = 
+            String[] msg =
             {
                 //Suction Cup Man, fuck you song, index: #r
                 "https://www.youtube.com/watch?v=jEXjhGJg1Jk",
@@ -769,7 +740,7 @@ namespace CustomReactions
             //index: 56
             string msg = "https://tenor.com/view/mike-wazowski-watchingyou-gif-5352035";
             return msg;
-        }        
+        }
 
         //transfer to DB
         public static string ItIsDecided()
@@ -783,7 +754,7 @@ namespace CustomReactions
         public static string ItIsDone()
         {
 
-            String[] msg = 
+            String[] msg =
             {
                 //Frodo, index: #k
                 "https://tenor.com/view/finished-elijah-wood-lord-of-the-rings-lava-fire-gif-5894611",
@@ -1190,7 +1161,7 @@ namespace CustomReactions
         //in Pumphouse DB
         public static string WTF()
         {
-            String[] msg = 
+            String[] msg =
             {
                 //Colbert, index: #a
                 "https://tenor.com/view/who-the-fuck-stephen-colbert-wtf-who-gif-16091360",
@@ -1232,7 +1203,7 @@ namespace CustomReactions
             //index: 4d
             var bitch = "https://cdn.discordapp.com/attachments/902629594564296725/936617850880286780/A_Special_Song_Just_For_You.webm";
             return bitch;
-        }        
+        }
 
         //same as "that's rough, buddy"
         public static string Zuko()
