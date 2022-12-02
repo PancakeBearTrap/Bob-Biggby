@@ -1805,7 +1805,7 @@ namespace Bob_Biggby
             }
 
             //For when Joe pings the degens in proactive
-            else if ((ProactiveChat || ProactiveAnnouncements) && lowmess.Contains(DegenRole))
+            else if ((ProactiveChat) && lowmess.Contains(DegenRole))
             {
                 var text = $"{DegenRole} doesn't have access to this chat {userMention}";
                 await message.Channel.SendMessageAsync($"{text}");
