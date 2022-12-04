@@ -850,12 +850,10 @@ namespace Bob_Biggby
         //Bob's Custom Reactions
         public void OnGetMessage(SocketUserMessage userMessage)
         {
-            Console.WriteLine($"OnGetMessage triggered with userMessage: '{userMessage}'");
             foreach (var r in commands)
             {
                 if (r.MessageMatches(userMessage))
                 {
-                    Console.WriteLine($"match found in r '{r}' with userMessage: '{userMessage}'");
                     break;
                 }
             }
@@ -1422,8 +1420,6 @@ namespace Bob_Biggby
 
             //this is for if Nadeko doesn't have all the commands
             OnGetMessage(message);
-            Console.WriteLine($"message: '{message}'");
-            Console.WriteLine($"lowmess: '{lowmess}'");
 
             //Command prefix for Bob. Bob's version of '.' for Nadeko
             if (message.HasStringPrefix("+", ref argPos))
