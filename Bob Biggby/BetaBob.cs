@@ -1424,7 +1424,7 @@ namespace Bob_Biggby
             /// </summary>
 
             //this is for if Nadeko doesn't have all the commands
-            OnGetMessage(message);
+            //OnGetMessage(message);
 
             //Command prefix for Bob. Bob's version of '.' for Nadeko
             if (message.HasStringPrefix("+", ref argPos))
