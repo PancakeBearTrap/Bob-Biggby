@@ -9,6 +9,14 @@
   },
   {
     "prompts": [
+      "test code"
+    ],
+    "responses": [
+      "custom code"
+    ]
+  },
+  {
+    "prompts": [
       "*eyeroll*"
     ],
     "responses": [

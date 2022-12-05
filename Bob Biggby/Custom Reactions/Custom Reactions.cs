@@ -1,5 +1,13 @@
-﻿using Discord.WebSocket;
+﻿using Discord;
+using Discord.Interactions;
+using Discord.Net.Queue;
+using Discord.Net.Rest;
+using Discord.Rest;
+using Discord.Webhook;
+using Discord.WebSocket;
 using System;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CustomReactions
 {
@@ -21,6 +29,7 @@ namespace CustomReactions
             responses = _responses;
             return this;
         }
+
 
         //this is basically pseudocode, the specifics depend on how you're using the API
         public bool MessageMatches(SocketUserMessage arg)

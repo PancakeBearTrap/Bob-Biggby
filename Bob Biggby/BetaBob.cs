@@ -272,6 +272,10 @@ namespace Bob_Biggby
             commands.Add(new Response()
                 .SetPrompts("hey, bob")
                 .SetResponses("bitch"));
+            
+            commands.Add(new Response()
+                .SetPrompts("test code")
+                .SetResponses("custom code"));
 
             //Symbols
             commands.Add(new Response()
@@ -454,6 +458,7 @@ namespace Bob_Biggby
             commands.Add(new Response()
                 .SetPrompts("hehe")
                 .SetResponses(NadekoLCR.Hehe()));
+            
             commands.Add(new Response()
                 .SetPrompts("hello there")
                 .SetResponses(NadekoLCR.HelloThere()));
