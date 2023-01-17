@@ -21,40 +21,27 @@ namespace CustomReactions
         readonly String[] CommandsAdded =
         {
             //**
-            "*eyeroll*", ":(", ":frowning:", 
+            ":(", ":frowning:", 
             //A
             "a great day",
             //B
-            "backup checklist", "be gone vile man", "becky", "big head", "big stupid jellyfish", "bitch", "bitch", "bones day", "boss man", "brittney",
+            "becky", "big head", "bitch", "bones day", "boss man", "brittney",
             //C
-            "can it wait for a bit?", "castle", "check the handbook", "chloe price", "custodian",
+            "castle", "check the handbook",
             //D
-            "dab", "dan",
-            "dan w", "dan w",
-            "daniel", "dann", "darth maul", "deal with it", "dennis",
-            "dew it", "dew it",
-            "do it", "do it", "do it", "do it", "do it",
+            "dab", "dan", "dan w", "deal with it", "dennis", "dew it", "do it",
             //E
             "eat a chode", "eat a dick", "escalate", "ess", "ew", "excellent", "extended it alignments",
             //F
-            "fresh prince",
-            "fuck", "fuck",
-            "fuck off", "fuck that",
-            "fuck you", "fuck you", "fuck you",
-            "fc3 fuck you",
+            "fresh prince", "fuck", "fuck off", "fuck that", "fuck you", "fuck you",
             //G
             "general kenobi", "great day",
             //H
-            "haha good one", "have you checked your butthole", "hehe", "hello there", "help desk", "help desk main line", "help desk mating ritual", "help me", "hmm no",
+            "haha good one", "have you checked your butthole", "hello there", "help desk", "help desk main line", "help desk mating ritual", "help me", "hmm no",
             "how dare you", "'https://tenor.com/view/balls-sucking-cherry-lick-his-nuts-gif-15332077'",
             //I
-            "I am untethered", "I am untethered and my rage knows no bounds",
-            "I can do this all day", "I have spoken", "I know some of those words", "I know where it is", "I own you", "I quit",
-            "I understand that reference", "I understand that reference",
-            "I understood that reference", "I understood that reference",
-            "I'll allow it", "I'll just leave", "I'm disappointed", "I'm fine", "I'm totally working", "I'm watching you", "it is decided",
-            "it is done", "it is done", "it is done",
-            "it's friday", "it's friday losers", "it's monday", "it's time to press buttons",
+            "I can do this all day", "I have spoken", "I know where it is", "I own you", "I quit", "I understand that reference", "I understood that reference",
+            "I'll allow it", "I'm disappointed", "I'm totally working", "I'm watching you", "it is decided", "it's friday", "it's monday", "it's time to press buttons",
             //J
             "jake", "jks", "joe", 
             //K
@@ -63,28 +50,24 @@ namespace CustomReactions
             "larson", "loveall", 
             //M
             "martin", "marty", "mild shock",
-            //N
-            "noc",
             //O
-            "on site", "onsite",
-            "oops", "oopsie",
+            "on site", "onsite", "oops", "oopsie",
             //P
-            "panda rage", "pebcac", "praise the beheaded", "praise the sun", 
+            "pebcac", 
             //R
             "rob",
             //S
             "self burn", "shame", "shhh", "signal flags", "slap chris", "stfu", "suck it",
             //T
-            "thank you bob", "that's fucking it", "that's rough, buddy", "that's what she said", "the beheaded", "the discord purge", "the worst", "this is the way", "time to work", "tlj",
+            "that's fucking it", "that's rough, buddy", "that's what she said", "the discord purge", "the worst", "this is the way", "time to work",
             //U
-            "ugh", "unacceptable", "unlimited power",
+            "ugh", "unacceptable",
             //V
             "vsa",
             //W
-            "wait...", "who gives a fuck", "who the hell cares", "winston",
-            "wtf", "wtf", "wtf", "wtf", 
+            "wait...", "who gives a fuck", "who the hell cares", "wtf",
             //Y
-            "yes, my liege", "you have no power here", "you're a bitch",
+            "you have no power here", "you're a bitch",
             //Z
             "zuko",
         };
