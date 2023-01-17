@@ -1,16 +1,17 @@
-﻿//System
+﻿//Namespace
 using CustomReactions;
 //Discord
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+//Microsoft
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+//System
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-//Usings not used
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
@@ -1297,7 +1298,7 @@ namespace Bob_Biggby
             /// </summary>
 
             //this is for if Nadeko doesn't have all the commands
-            OnGetMessage(message);
+            //OnGetMessage(message);
 
             //Command prefix for Bob. Bob's version of '.' for Nadeko
             if (message.HasStringPrefix("+", ref argPos))
@@ -1484,7 +1485,7 @@ namespace Bob_Biggby
             }
 
             //For when Joe pings the degens in proactive
-            else if ((ProactiveChat || ProactiveAnnouncements) && lowmess.Contains(DegenRole))
+            else if ((ProactiveChat) && lowmess.Contains(DegenRole))
             {
                 var text = $"{DegenRole} doesn't have access to this chat {userMention}";
                 await message.Channel.SendMessageAsync($"{text}");
