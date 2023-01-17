@@ -34,10 +34,10 @@ namespace CustomReactions
         {
             String[] bitch =
             {
-                //suction cup man Korea gif
-                "https://tenor.com/view/youre-a-bitch-jopstoffels-suctioncupman-gif-11942465", 
-                //suction cup man you're a bitch song
-                "https://www.youtube.com/watch?v=f9zpxWEweWc"
+                //Suction Cup Korea gif, index: #37
+                "https://tenor.com/view/youre-a-bitch-jopstoffels-suctioncupman-gif-11942465",
+                //Suction Cup you're a bitch song, index: #38
+                "https://www.youtube.com/watch?v=f9zpxWEweWc",
             };
 
             Random random = new Random();
