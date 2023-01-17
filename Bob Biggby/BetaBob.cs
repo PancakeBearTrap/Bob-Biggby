@@ -173,7 +173,7 @@ namespace Bob_Biggby
             if (File.Exists(customReactionsDataPath))
             {
                 Console.WriteLine($"Custom Reactions was last modified {File.GetLastWriteTime(customReactionsDataPath)}. Current time is {DateTime.Now}");
-
+                
                 LoadCustomReactions();
             }
 
