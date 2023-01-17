@@ -18,15 +18,6 @@ namespace CustomReactions
             
         };
 
-        readonly String[] NeedsNewLink =
-        {
-            "comms", "comms",
-            "dann",
-            "email the user",
-            "it's friday losers",
-            "yes, my liege",
-        };
-
         readonly String[] CommandsAdded =
         {
             //**
@@ -98,13 +89,6 @@ namespace CustomReactions
             "zuko",
         };
 
-        public static string Eyeroll()
-        {
-            //index: 69
-            string msg = "https://tenor.com/view/jessica-jones-krysten-ritter-eye-roll-ugh-so-done-gif-8657077";
-            return msg;
-        }
-
         public static string Frown()
         {
             string msg = "https://tenor.com/view/egg-frank-can-i-offer-you-a-nice-egg-in-this-trying-time-gif-13802522";
@@ -115,22 +99,6 @@ namespace CustomReactions
         {
             //index: 58
             string msg = "https://youtu.be/WRu_-9MBpd4";
-            return msg;
-        }
-
-        //In Pumphouse DB
-        public static string BackupChecklist()
-        {
-            //index: 6a
-            string checklist = "https://cdn.discordapp.com/attachments/989223734781018112/989228588958122004/unknown.png";
-            return checklist;
-        }
-
-        //in database
-        public static string BeGoneVileMan()
-        {
-            //index: 4y
-            string msg = "https://cdn.discordapp.com/attachments/989223734781018112/1009194589707579514/be_gone_full.mp4";
             return msg;
         }
 
@@ -147,14 +115,6 @@ namespace CustomReactions
             //index: 7h
             string bigHead = "https://cdn.discordapp.com/attachments/989223734781018112/992102167370530836/bigHead.jpg";
             return bigHead;
-        }
-
-        //transfer to DB
-        public static string BigStupidJellyfish()
-        {
-            //index: 72
-            string hanar = "https://cdn.discordapp.com/attachments/895367300390211634/979489423697788968/viddit_4e65990c.mp4";
-            return hanar;
         }
 
         //2 responses
@@ -196,15 +156,6 @@ namespace CustomReactions
             return msg;
         }
 
-        //transfer to DB
-        public static string CanItWaitForABit()
-        {
-            //index: 5z
-            string garrus = "https://cdn.discordapp.com/attachments/902629594564296725/958078313568563400/downloadfile.gif";
-            return garrus;
-        }
-
-        //transfer to DB
         public static string Castle()
         {
             //index: 6b
@@ -212,47 +163,12 @@ namespace CustomReactions
             return castle;
         }
 
-        //transfer to DB
         public static string CheckTheHandbook()
         {
             //index: 4k
             var Handbook = "https://cdn.discordapp.com/attachments/920025341341351947/941416879505936414/unknown.png";
             return Handbook;
 
-        }
-
-        //Transfer to DB
-        public static string ChloePrice()
-        {
-            //index: 6n
-            string chloePrice = "https://cdn.discordapp.com/attachments/895367300390211634/971457801845112842/image0.gif";
-            return chloePrice;
-        }
-
-        //2 responses
-        //both have been deleted due to source image being deleted from purge
-        public static string Comms()
-        {
-            String[] msg =
-            {
-                //autotask, index: 3f
-                "https://media.discordapp.net/attachments/920025341341351947/927671844541190165/unknown.png",
-                //Drake meme, index: 6u
-                "https://cdn.discordapp.com/attachments/970460026097516594/974695483626913852/unknown.png"
-            };
-            Random random = new Random();
-            int value = random.Next(0, msg.Length);
-            var comms = ($"{msg[value]}");
-            return comms;
-        }
-
-        //different from daniel
-        //transfer to DB
-        public static string Custodian()
-        {
-            //index: 3u
-            var custodian = "https://cdn.discordapp.com/attachments/895367300390211634/929641177131651092/viddit_e3a2f13e.mp4";
-            return custodian;
         }
 
         public static string Dab()
@@ -262,7 +178,6 @@ namespace CustomReactions
             return dab;
         }
 
-        //transfer to DB
         public static string Dan()
         {
             //index: 6g
@@ -286,30 +201,6 @@ namespace CustomReactions
             return danW;
         }
 
-        public static string Daniel()
-        {
-            //index: 55
-            var daniel = "https://tenor.com/view/the-joker-heath-ledger-no-plan-gif-5874443";
-            return daniel;
-        }
-
-        //needs new link
-        public static string Dann()
-        {
-            //index: 65
-            string dann = "https://media.discordapp.net/attachments/948590685056040970/959083245872496671/unknown.png";
-            return dann;
-        }
-
-        //transfer to DB
-        public static string DarthMaul()
-        {
-            //index: 4w
-            string msg = "https://cdn.discordapp.com/attachments/902629594564296725/946213179208392714/viddit_2aa4aa9c_1.mp4";
-            return msg;
-        }
-
-        //in database
         public static string DealWithIt()
         {
             //index: 6s
@@ -325,7 +216,6 @@ namespace CustomReactions
         }
 
         //2 response
-        //transfer to DB
         public static string DewIt()
         {
             String[] msg =
@@ -344,7 +234,6 @@ namespace CustomReactions
         }
 
         //5 responses. includes dew it
-        //transfer to DB
         public static string DoIt()
         {
             //String in order: dew it, palpatine, Shia "Do it", Shia "What are you waiting for"
@@ -382,16 +271,6 @@ namespace CustomReactions
             return eatADick;
         }
 
-        //same as comms
-        //entry has been deleted
-        public static string EmailTheUser()
-        {
-            //index: 
-            var emailTheUser = "https://media.discordapp.net/attachments/920025341341351947/927671844541190165/unknown.png";
-            return emailTheUser;
-        }
-
-        //transfer to DB
         public static string Escalate()
         {
             //index: y
@@ -399,7 +278,6 @@ namespace CustomReactions
             return escalate;
         }
 
-        //transfer to DB
         public static string ESS()
         {
             //index: 4r
@@ -407,7 +285,6 @@ namespace CustomReactions
             return ess;
         }
 
-        //transfer to DB
         public static string Ew()
         {
             //index: 9
@@ -422,20 +299,11 @@ namespace CustomReactions
             return excellent;
         }
 
-        //transfer to DB
         public static string ExtendedITAlignments()
         {
             //index: 3w
             var itAlignments = "https://cdn.discordapp.com/attachments/895367300390211634/930516339334987836/Extra_Alignment_color.png";
             return itAlignments;
-        }
-
-        //In Pumphouse DB
-        public static string FC3FuckYou()
-        {
-            //Index 7p
-            var vaas = "https://cdn.discordapp.com/attachments/989223734781018112/1009453766476562503/VideoEditor_20220730_081226.mp4";
-            return vaas;
         }
 
         public static string FreshPrince()
@@ -445,7 +313,6 @@ namespace CustomReactions
             return freshPrince;
         }
 
-        //transfer to DB
         public static string Fuck()
         {
             String[] msg =
@@ -473,7 +340,6 @@ namespace CustomReactions
             return msg;
         }
 
-        //transfer to DB
         public static string FuckThat()
         {
             //index: 5r
@@ -482,7 +348,6 @@ namespace CustomReactions
         }
 
         //3 Responses
-        //In Pumphouse DB
         public static string FuckYou()
         {
             String[] msg =
@@ -491,8 +356,8 @@ namespace CustomReactions
                 "https://www.youtube.com/watch?v=jEXjhGJg1Jk",
                 //Suction cup man every time he says fuck you, index: #6i
                 "https://youtu.be/7V22OCLqovA",
-                //Vaas fuck you; index 7n
-                "https://cdn.discordapp.com/attachments/989223734781018112/1009453766476562503/VideoEditor_20220730_081226.mp4",
+                //Dead Cells the bird
+                "https://tenor.com/view/dead-cells-middle-finger-fuck-you-gif-15761204",
             };
 
             Random random = new Random();
@@ -530,14 +395,6 @@ namespace CustomReactions
             return butthole;
         }
 
-        //transfer to DB
-        public static string Hehe()
-        {
-            //index: 4c
-            string hehe = "https://cdn.discordapp.com/attachments/895367300390211634/935237716403167232/IMG_5271.gif";
-            return hehe;
-        }
-
         public static string HelloThere()
         {
             //index: z
@@ -573,15 +430,6 @@ namespace CustomReactions
             return helpMe;
         }
 
-        /// bookmark only
-        //public static string HeyBob()
-        //{
-        //    //index: 7a
-        //    string heyBob = "Alpha Bob reporting for duty";
-        //    return heyBob;
-        //}
-
-        //transfer to DB
         public static string HmmNo()
         {
             //index: c
@@ -603,22 +451,6 @@ namespace CustomReactions
             return stopIt;
         }
 
-        //transfer to DB
-        public static string IAmUntethered()
-        {
-            //index: 5s
-            string msg = "https://cdn.discordapp.com/attachments/902629594564296725/946213305234620426/viddit_37bd7fb4_1.mp4";
-            return msg;
-        }
-
-        //transfer to DB
-        public static string IAmUntetheredPartAndMyRageKnowsNoBounds()
-        {
-            //index: 4v
-            string msg = "https://cdn.discordapp.com/attachments/902629594564296725/946213305234620426/viddit_37bd7fb4_1.mp4";
-            return msg;
-        }
-
         public static string ICanDoThisAllDay()
         {
             //5e
@@ -633,26 +465,11 @@ namespace CustomReactions
             return iHaveSpoken;
         }
 
-        //transfer to DB
-        public static string IKnowSomeOfThoseWords()
-        {
-            //index: 68
-            string someWords = "https://cdn.discordapp.com/attachments/895367300390211634/907348953614413855/RDT_20210616_0037112639804550901458370.png";
-            return someWords;
-        }
-
         //have you checked your butthole
         public static string IKnowWhereItIs()
         {
             var butthole = "https://youtu.be/6IjuSycXjqM";
             return butthole;
-        }
-
-        //transfer to DB
-        public static string IOwnYou()
-        {
-            var Hades = "https://cdn.discordapp.com/attachments/895367300390211634/925133029339459624/IMG_3430.gif";
-            return Hades;
         }
 
         public static string IQuit()
@@ -662,7 +479,6 @@ namespace CustomReactions
         }
 
         //2 respoonses
-        //transfer to DB
         public static string IUnderstandThatReference()
         {
             String[] msg =
@@ -681,7 +497,6 @@ namespace CustomReactions
         }
 
         //2 responses
-        //transfer to DB
         public static string IUnderstoodThatReference()
         {
             String[] msg =
@@ -699,7 +514,6 @@ namespace CustomReactions
             return CaptainAmerica;
         }
 
-        //transfer to DB
         public static string IllAllowIt()
         {
             //index: 7
@@ -707,25 +521,11 @@ namespace CustomReactions
             return SenorChang;
         }
 
-        public static string IllJustLeave()
-        {
-            //index: 79
-            string buster = "https://tenor.com/view/leaving-im-gone-going-gif-13660937";
-            return buster;
-        }
-
         public static string ImDissapointed()
         {
             //index: 5m
             var disappointed = "https://tenor.com/view/disappointment-disappointed-food-review-meme-gif-16003613";
             return disappointed;
-        }
-
-        public static string ImFine()
-        {
-            //index: v
-            var HadesFine = "https://tenor.com/view/hades-its-cool-im-fine-relax-hercules-gif-16668568";
-            return HadesFine;
         }
 
         public static string ImTotallyWorking()
@@ -742,33 +542,11 @@ namespace CustomReactions
             return msg;
         }
 
-        //transfer to DB
         public static string ItIsDecided()
         {
             //index: 6
             var decided = "https://cdn.discordapp.com/attachments/895367300390211634/925133251109064714/IMG_3198.gif";
             return decided;
-        }
-
-        //3 responses
-        public static string ItIsDone()
-        {
-
-            String[] msg =
-            {
-                //Frodo, index: #k
-                "https://tenor.com/view/finished-elijah-wood-lord-of-the-rings-lava-fire-gif-5894611",
-                //Kronk, index: #m
-                "https://tenor.com/view/victory-done-success-mission-accomplished-kronk-gif-4946910",
-                //Borat, index: 5u
-                "https://tenor.com/view/success-great-job-nice-great-success-great-gif-5586706",
-            };
-
-            Random random = new Random();
-            int value = random.Next(0, msg.Length);
-            var itIsDone = ($"{msg[value]}");
-
-            return itIsDone;
         }
 
         public static string ItsFriday()
@@ -778,16 +556,6 @@ namespace CustomReactions
             return friday;
         }
 
-        //needs new link
-        //transfer to DB
-        public static string ItsFridayLosers()
-        {
-            //index: 33
-            var losers = "https://cdn.discordapp.com/attachments/899754600352067624/901077939511230474/6vjNyozd9-NHn872.mp4";
-            return losers;
-        }
-
-        //transfer to DB
         public static string ItsMonday()
         {
             //index: 4f
@@ -802,7 +570,6 @@ namespace CustomReactions
             return buttons;
         }
 
-        //in Pumphouse DB
         public static string Jake()
         {
             //index: 7i
@@ -810,7 +577,6 @@ namespace CustomReactions
             return jake;
         }
 
-        //transfer to DB
         public static string JKS()
         {
             //index: 5q
@@ -825,7 +591,6 @@ namespace CustomReactions
             return joe;
         }
 
-        //transfer to DB
         public static string JustinK()
         {
             //index: 78
@@ -833,7 +598,6 @@ namespace CustomReactions
             return justinK;
         }
 
-        //in DB
         //same as vsa
         public static string Kaseya()
         {
@@ -901,13 +665,6 @@ namespace CustomReactions
             return mildShock;
         }
 
-        public static string NOC()
-        {
-            //index: 4s
-            var noc = "https://tenor.com/view/nailed-it-three-pointer-basketball-whoosh-3pointer-gif-16331098";
-            return noc;
-        }
-
         //on site
         public static string OnSite1()
         {
@@ -938,33 +695,11 @@ namespace CustomReactions
             return oopsie;
         }
 
-        //transfer to DB
-        public static string PandaRage()
-        {
-            //index: 66
-            string pandaRage = "https://media.discordapp.net/attachments/895346146313125898/908765386009370665/IMG_4908.gif";
-            return pandaRage;
-        }
-
         public static string Pebcac()
         {
             //index: 52
             var pebcac = "problem exists between computer and chair";
             return pebcac;
-        }
-
-        public static string PraiseTheBeheaded()
-        {
-            //index: 5k
-            string msg = "https://tenor.com/view/pray-the-sun-dead-cells-gif-19409747";
-            return msg;
-        }
-
-        public static string PraiseTheSun()
-        {
-            //index: 39
-            var Solaire = "https://www.youtube.com/watch?v=So5hTxKmPrA&list=PLrvVfo9ufJZcj9YjUJx8AagyhBHFpZjgV&index=31";
-            return Solaire;
         }
 
         public static string Rob()
@@ -988,7 +723,6 @@ namespace CustomReactions
             return shame;
         }
 
-        //transfer to DB
         public static string Shhh()
         {
             //index: 5p
@@ -1024,14 +758,6 @@ namespace CustomReactions
             return Ruxin;
         }
 
-        public static string ThankYouBob()
-        {
-            //index: 3a
-            var thanks = "you're welcome";
-            return thanks;
-        }
-
-        //Transfer to DB
         public static string ThatsFuckingIt()
         {
             //index: 6h
@@ -1051,13 +777,6 @@ namespace CustomReactions
             //index: 6y
             string sheSaid = "https://tenor.com/view/steve-carell-the-office-thats-what-she-said-gif-8356135";
             return sheSaid;
-        }
-
-        public static string TheBeheaded()
-        {
-            //index: 5j
-            string msg = "https://tenor.com/view/dead-cells-middle-finger-fuck-you-gif-15761204";
-            return msg;
         }
 
         public static string TheDiscordPurge()
@@ -1088,14 +807,6 @@ namespace CustomReactions
             return timeToWork;
         }
 
-        //transfer to DB
-        public static string TLJ()
-        {
-            //index: 4
-            var tlj = "https://cdn.discordapp.com/attachments/895367300390211634/925115018331172905/IMG_3701.jpg";
-            return tlj;
-        }
-
         public static string Ugh()
         {
             //index: 6j
@@ -1110,14 +821,6 @@ namespace CustomReactions
             return unacceptable;
         }
 
-        public static string UnlimitedPower()
-        {
-            //index: 77
-            string sheev = "https://tenor.com/view/unlimited-power-star-wars-gif-10270127";
-            return sheev;
-        }
-
-        //in DB
         //same as kaseya
         public static string VSA()
         {
@@ -1125,7 +828,6 @@ namespace CustomReactions
             return vsa;
         }
 
-        //transfer to DB
         public static string Wait()
         {
             //index: 8
@@ -1133,7 +835,6 @@ namespace CustomReactions
             return wait;
         }
 
-        //transfer to DB
         public static string WhoGivesAFuck()
         {
             //index: 63
@@ -1141,7 +842,6 @@ namespace CustomReactions
             return chrisPratt;
         }
 
-        //transfer to DB
         public static string WhoTheHellCares()
         {
             //index: 64
@@ -1149,16 +849,7 @@ namespace CustomReactions
             return whoCares;
         }
 
-        //transfer to DB
-        public static string Winston()
-        {
-            //index: 6d
-            string winston = "https://cdn.discordapp.com/attachments/895367300390211634/964237663060246578/IMG_2918.gif";
-            return winston;
-        }
-
         //4 responses
-        //in Pumphouse DB
         public static string WTF()
         {
             String[] msg =
@@ -1180,16 +871,6 @@ namespace CustomReactions
             return wtf;
         }
 
-        //needs new link
-        //transfer to DB
-        public static string YesMyLiege()
-        {
-            //index: 5h
-            string msg = "https://cdn.discordapp.com/attachments/948590685056040970/952070092689117235/RDT_20220312_0006067869055844959929244.jpg";
-            return msg;
-        }
-
-        //transfer to DB
         public static string YouHaveNoPowerHere()
         {
             //index: 6r
@@ -1197,7 +878,6 @@ namespace CustomReactions
             return theoden;
         }
 
-        //transfer to DB
         public static string YoureaABitch()
         {
             //index: 4d
@@ -1212,28 +892,5 @@ namespace CustomReactions
             var Zuko = "https://tenor.com/view/thats-rough-buddy-avatar-the-last-airbender-zuko-gif-17596756";
             return Zuko;
         }
-    }
-
-    public class BetaBobLCR
-    {
-        readonly String[] CommandsToAdd =
-        {
-            //Beta Bob
-            "bees in my head", "blame", "bob", "bob is going offline",
-            "count",
-            "deez nuts",
-            "EDI testing",
-            "get me a jeffery", "ghost town", "going dark", "good morning",
-            "I am the Custodian", "I am the Senate", "insult", "irish curse",
-            "joe points",
-            "leaderboard",
-            "morning",
-            "pinging degens in proactive chats", "proactive points",
-            "quickbooks",
-            "rob's desktop",
-            "that's you're opinion",
-            "will's masterbatorium", "will's spank bank", "willie p", "willy p",
-            "you're wrong"
-        };
     }
 }

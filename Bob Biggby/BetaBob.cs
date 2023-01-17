@@ -268,20 +268,7 @@ namespace Bob_Biggby
         {
             commands.Clear();
 
-            //test
-            commands.Add(new Response()
-                .SetPrompts("hey, bob")
-                .SetResponses("bitch"));
-            
-            commands.Add(new Response()
-                .SetPrompts("test code")
-                .SetResponses("custom code"));
-
             //Symbols
-            commands.Add(new Response()
-                .SetPrompts("*eyeroll*")
-                .SetResponses(NadekoLCR.Eyeroll()));
-
             commands.Add(new Response()
                 .SetPrompts(":(", ":frowning")
                 .SetResponses(NadekoLCR.Frown()));
@@ -293,24 +280,12 @@ namespace Bob_Biggby
 
             //B
             commands.Add(new Response()
-                .SetPrompts("backup checklist")
-                .SetResponses(NadekoLCR.BackupChecklist()));
-
-            commands.Add(new Response()
-                .SetPrompts("be gone vile man")
-                .SetResponses(NadekoLCR.BeGoneVileMan()));
-
-            commands.Add(new Response()
                 .SetPrompts("becky")
                 .SetResponses(NadekoLCR.Becky()));
 
             commands.Add(new Response()
                 .SetPrompts("big head")
                 .SetResponses(NadekoLCR.BigHead()));
-
-            commands.Add(new Response()
-                .SetPrompts("big stupid jellyfish")
-                .SetResponses(NadekoLCR.BigStupidJellyfish()));
 
             //2 responses
             commands.Add(new Response()
@@ -331,24 +306,12 @@ namespace Bob_Biggby
 
             //C
             commands.Add(new Response()
-                .SetPrompts("can it wait for a bit?", "can it wait for a bit")
-                .SetResponses(NadekoLCR.CanItWaitForABit()));
-
-            commands.Add(new Response()
                 .SetPrompts("castle")
                 .SetResponses(NadekoLCR.Castle()));
 
             commands.Add(new Response()
                 .SetPrompts("check the handbook")
                 .SetResponses(NadekoLCR.CheckTheHandbook()));
-
-            commands.Add(new Response()
-                .SetPrompts("chloe price")
-                .SetResponses(NadekoLCR.ChloePrice()));
-
-            commands.Add(new Response()
-                .SetPrompts("custodian")
-                .SetResponses(NadekoLCR.Custodian()));
 
             //D
             commands.Add(new Response()
@@ -363,10 +326,6 @@ namespace Bob_Biggby
             commands.Add(new Response()
                 .SetPrompts("dan w")
                 .SetResponses(NadekoLCR.DanW()));
-
-            commands.Add(new Response()
-                .SetPrompts("daniel")
-                .SetResponses(NadekoLCR.Daniel()));
 
             commands.Add(new Response()
                 .SetPrompts("deal with it")
@@ -417,10 +376,6 @@ namespace Bob_Biggby
 
             //F
             commands.Add(new Response()
-                .SetPrompts("fc3 fuck you")
-                .SetResponses(NadekoLCR.FC3FuckYou()));
-
-            commands.Add(new Response()
                 .SetPrompts("fresh prince", "fresh prince of bel air")
                 .SetResponses(NadekoLCR.FreshPrince()));
 
@@ -456,10 +411,6 @@ namespace Bob_Biggby
                 .SetResponses(NadekoLCR.HaveYouCheckedYourButthole()));
 
             commands.Add(new Response()
-                .SetPrompts("hehe")
-                .SetResponses(NadekoLCR.Hehe()));
-            
-            commands.Add(new Response()
                 .SetPrompts("hello there")
                 .SetResponses(NadekoLCR.HelloThere()));
 
@@ -479,11 +430,6 @@ namespace Bob_Biggby
                 .SetPrompts("help me")
                 .SetResponses(NadekoLCR.HelpMe()));
 
-            ///here strictly for bookmarking
-            //commands.Add(new Response()
-            //.SetPrompts("hey bob")
-            //.SetResponses(NadekoLCR.HeyBob()));
-
             commands.Add(new Response()
                 .SetPrompts("hmm no")
                 .SetResponses(NadekoLCR.HmmNo()));
@@ -498,20 +444,12 @@ namespace Bob_Biggby
                 .SetResponses(NadekoLCR.InappropriateGif()));
 
             commands.Add(new Response()
-                .SetPrompts("i am untethered", "i am untethered and my rage knows no bounds")
-                .SetResponses(NadekoLCR.IAmUntethered()));
-
-            commands.Add(new Response()
                 .SetPrompts("i can do this all day")
                 .SetResponses(NadekoLCR.ICanDoThisAllDay()));
 
             commands.Add(new Response()
                 .SetPrompts("i have spoken")
                 .SetResponses(NadekoLCR.IHaveSpoken()));
-
-            commands.Add(new Response()
-                .SetPrompts("i know some of those words")
-                .SetResponses(NadekoLCR.IKnowSomeOfThoseWords()));
 
             commands.Add(new Response()
                 .SetPrompts("i quit")
@@ -527,16 +465,8 @@ namespace Bob_Biggby
                 .SetResponses(NadekoLCR.IllAllowIt()));
 
             commands.Add(new Response()
-                .SetPrompts("i'll just leave")
-                .SetResponses(NadekoLCR.IllJustLeave()));
-
-            commands.Add(new Response()
                 .SetPrompts("i'm disappointed")
                 .SetResponses(NadekoLCR.ImDissapointed()));
-
-            commands.Add(new Response()
-                .SetPrompts("i'm fine")
-                .SetResponses(NadekoLCR.ImFine()));
 
             commands.Add(new Response()
                 .SetPrompts("i'm totally working")
@@ -551,16 +481,8 @@ namespace Bob_Biggby
                 .SetResponses(NadekoLCR.ItIsDecided()));
 
             commands.Add(new Response()
-                .SetPrompts("it is done")
-                .SetResponses(NadekoLCR.ItIsDone()));
-
-            commands.Add(new Response()
                 .SetPrompts("it's friday")
                 .SetResponses(NadekoLCR.ItsFriday()));
-
-            commands.Add(new Response()
-                .SetPrompts("it's friday, losers")
-                .SetResponses(NadekoLCR.ItsFridayLosers()));
 
             commands.Add(new Response()
                 .SetPrompts("it's monday")
@@ -622,11 +544,6 @@ namespace Bob_Biggby
                 .SetPrompts("mild shock")
                 .SetResponses(NadekoLCR.MildShock()));
 
-            //N
-            commands.Add(new Response()
-                .SetPrompts("noc")
-                .SetResponses(NadekoLCR.NOC()));
-
             //O
             commands.Add(new Response()
                 .SetPrompts("on site", "onsite")
@@ -642,20 +559,8 @@ namespace Bob_Biggby
 
             //P
             commands.Add(new Response()
-                .SetPrompts("panda rage")
-                .SetResponses(NadekoLCR.PandaRage()));
-
-            commands.Add(new Response()
                 .SetPrompts("pebcac")
                 .SetResponses(NadekoLCR.Pebcac()));
-
-            commands.Add(new Response()
-                .SetPrompts("praise the beheaded")
-                .SetResponses(NadekoLCR.PraiseTheBeheaded()));
-
-            commands.Add(new Response()
-                .SetPrompts("praise the sun")
-                .SetResponses(NadekoLCR.PraiseTheSun()));
 
             //R
             commands.Add(new Response()
@@ -693,10 +598,6 @@ namespace Bob_Biggby
 
             //T
             commands.Add(new Response()
-                .SetPrompts("thank you bob")
-                .SetResponses(NadekoLCR.ThankYouBob()));
-
-            commands.Add(new Response()
                 .SetPrompts("that's fucking it")
                 .SetResponses(NadekoLCR.ThatsFuckingIt()));
 
@@ -707,10 +608,6 @@ namespace Bob_Biggby
             commands.Add(new Response()
                 .SetPrompts("that's what she said")
                 .SetResponses(NadekoLCR.ThatsWhatSheSaid()));
-
-            commands.Add(new Response()
-                .SetPrompts("the beheaded")
-                .SetResponses(NadekoLCR.TheBeheaded()));
 
             commands.Add(new Response()
                 .SetPrompts("the discord purge")
@@ -728,10 +625,6 @@ namespace Bob_Biggby
                 .SetPrompts("time to work")
                 .SetResponses(NadekoLCR.TimeToWork()));
 
-            commands.Add(new Response()
-                .SetPrompts("tlj")
-                .SetResponses(NadekoLCR.TLJ()));
-
             //U
             commands.Add(new Response()
                 .SetPrompts("ugh")
@@ -740,10 +633,6 @@ namespace Bob_Biggby
             commands.Add(new Response()
                 .SetPrompts("unacceptable")
                 .SetResponses(NadekoLCR.Unacceptable()));
-
-            commands.Add(new Response()
-                .SetPrompts("unlimited power")
-                .SetResponses(NadekoLCR.UnlimitedPower()));
 
             //W
             commands.Add(new Response()
@@ -759,18 +648,10 @@ namespace Bob_Biggby
                 .SetResponses(NadekoLCR.WhoTheHellCares()));
 
             commands.Add(new Response()
-                .SetPrompts("winston")
-                .SetResponses(NadekoLCR.Winston()));
-
-            commands.Add(new Response()
                 .SetPrompts("wtf")
                 .SetResponses(NadekoLCR.WTF()));
 
             //Y
-            commands.Add(new Response()
-                .SetPrompts("yes, my liege")
-                .SetResponses(NadekoLCR.YesMyLiege()));
-
             commands.Add(new Response()
                 .SetPrompts("you have no power here")
                 .SetResponses(NadekoLCR.YouHaveNoPowerHere()));
@@ -843,13 +724,6 @@ namespace Bob_Biggby
         public async Task ReplyWithMessageAsync(SocketUserMessage userMsg)
         {
             await userMsg.ReplyAsync();
-        }
-
-        async void LunchReminder(SocketUserMessage userMsg)
-        {
-            await Task.Delay(TimeSpan.FromHours(1));
-
-            await userMsg.ReplyAsync("lunch is over");
         }
 
         //Bob's Custom Reactions
@@ -1434,6 +1308,7 @@ namespace Bob_Biggby
                     Console.WriteLine(result.ErrorReason);
             }
 
+            //so this code doesn't interact in politics chat
             else if (PoliticsChat)
             {
                 return;
@@ -1500,50 +1375,6 @@ namespace Bob_Biggby
                 await message.Channel.SendMessageAsync(insult);
             }
 
-            //Morning
-            else if (lowmess.Contains("morning") || lowmess.Contains("mornin"))
-            {
-                //Response choices
-                String[] respondOptions = { "grumpy morning", "good morning" };
-
-                //Bob chooses the response from each set to choose from
-                Random random = new Random();
-                int respondChoice = random.Next(0, respondOptions.Length);
-                int morningChoice = random.Next(0, morning.Length);
-                int goodMorningChoice = random.Next(0, goodMorning.Length);
-                string msg;
-
-                //trimming excess characters
-                var also = "also ".ToCharArray();
-                var symbols = "!".ToCharArray();
-                var trim = lowmess.TrimStart(also);
-                var filterMessage = trim.TrimEnd(symbols);
-                Console.WriteLine($"filtered message: '{filterMessage}'");
-
-                //Grumpy
-                if (filterMessage.Equals("morning") || filterMessage.Equals("mornin"))
-                {
-                    if (respondChoice == 0)
-                    {
-                        msg = $"{morning[morningChoice]}";
-                        await message.Channel.SendMessageAsync(msg);
-                    }
-
-                    else if (respondChoice == 1)
-                    {
-                        msg = $"{goodMorning[goodMorningChoice]}";
-                        await message.Channel.SendMessageAsync(msg);
-                    }
-                }
-
-                //Positive
-                else if (filterMessage.Equals("good morning") || filterMessage.Equals("good mornin"))
-                {
-                    msg = $"{goodMorning[goodMorningChoice]}";
-                    await message.Channel.SendMessageAsync(msg);
-                }
-            }
-
             //You're wrong
             else if (lowmess.Equals("you're wrong"))
             {
@@ -1563,51 +1394,10 @@ namespace Bob_Biggby
                 await message.Channel.SendMessageAsync($"{shame}");
             }
 
-            //Going Dark
-            //else if (lowmess.Equals("going dark") || lowmess.Equals("bob is going offline"))
-            //{
-            //    await message.Channel.SendMessageAsync("https://tenor.com/view/bravo-six-going-dark-cod-sergeant-mw-modern-warfare-gif-14985183");
-            //}
-
             //Willy P and Willie 
             else if (lowmess.Contains("willy p") || lowmess.Contains("willie"))
             {
-                //tests for URL
-                try
-                {
-                    WebRequest url = WebRequest.Create(lowmess);
-                    WebResponse request = url.GetResponse();
-
-                    if (request.SupportsHeaders)
-                    {
-                        return;
-                    }
-                }
-                //tests for file
-                catch (FormatException)
-                {
-                    try
-                    {
-                        FileInfo file = new FileInfo(lowmess);
-                        bool exists = file.Exists;
-                        if (exists)
-                        {
-                            return;
-                        }
-                    }
-                    catch (FormatException)
-                    {
-                        return;
-                    }
-                }
-
                 await message.Channel.SendMessageAsync("https://tenor.com/view/officer-doofy-salute-goofy-gif-15829687");
-            }
-
-            //Bees in my head
-            else if (lowmess.Contains("bees in my head"))
-            {
-                await message.Channel.SendMessageAsync("https://cdn.discordapp.com/attachments/895367300390211634/920737168354316378/8fee057.jpg");
             }
 
             //Deez Nutz, Doze Nutz, and Deez Nuts
@@ -1615,33 +1405,6 @@ namespace Bob_Biggby
             {
                 await message.AddReactionAsync(thumbsupEmoji);
                 await message.Channel.SendMessageAsync("gottem");
-            }
-
-            //Rob's Desktop
-            else if (lowmess.Equals("rob's desktop") || lowmess.Equals("robs desktop"))
-            {
-                var desktop = "https://media.discordapp.net/attachments/920025341341351947/943607875325022238/unknown.png";
-                await message.Channel.SendMessageAsync(desktop);
-            }
-
-            //Will's spank bank
-            //transfer to DB
-            //needs new links for all
-            else if (lowmess.Contains("will's spank bank") || lowmess.Contains("wills spank bank") || lowmess.Contains("will's masterbatorium") || lowmess.Contains("wills masterbatorium"))
-            {
-                string[] spankBank =
-                {
-                    //Rob's desktop
-                    "https://media.discordapp.net/attachments/920025341341351947/943607875325022238/unknown.png", 
-                    //Gun Wall
-                    "https://cdn.discordapp.com/attachments/920025341341351947/945736559301386300/unknown.png",
-                    //Gun wall 2
-                    "https://cdn.discordapp.com/attachments/920025341341351947/945739749992329256/modwall-config-front-highres-008-800x630.png",
-                };
-
-                Random random = new Random();
-                var value = random.Next(0, spankBank.Length);
-                await message.Channel.SendMessageAsync(spankBank[value]);
             }
 
             //Irish Curses
@@ -1690,13 +1453,6 @@ namespace Bob_Biggby
                 await message.Channel.SendMessageAsync(sugarfreeGummies[value]);
             }
 
-            //Waltersobchakeit
-            //transfer to DB
-            else if (lowmess.Contains("waltersobchakeit"))
-            {
-                await message.Channel.SendMessageAsync("https://media.discordapp.net/attachments/920025510883524679/948315645781626970/IMG_3714-1.jpg");
-            }
-
             //Will's reactions
             else if (lowmess.Contains("will") && !lowmess.Contains("blame") && !lowmess.Contains("joe point"))
             {
@@ -1728,67 +1484,6 @@ namespace Bob_Biggby
                 }
             }
 
-            //Reaction Memes
-            //transfer to DB
-            //add to Beta bob's commands cs file
-            else if (lowmess.Contains("gif") || lowmess.Contains("meme"))
-            {
-                //Transfer to DB
-                if (lowmess.Equals("absolutely not gif"))
-                {
-                    String[] msg =
-                    {
-                        //Wolf of Wall Street
-                        "https://cdn.discordapp.com/attachments/895367300390211634/905140828530434048/IMG_3508.gif",
-                        //Ryan Renolds
-                        "https://tenor.com/view/absolutely-not-nope-no-no-way-no-chance-gif-17243246",
-                    };
-
-                    Random random = new Random();
-                    int value = random.Next(0, msg.Length);
-
-                    await message.Channel.SendMessageAsync(msg[value]);
-                }
-
-                else if (lowmess.Equals("are you sure gif"))
-                {
-                    await message.Channel.SendMessageAsync("https://tenor.com/view/dumb-and-dumber-are-you-sure-gif-8838081");
-                }
-
-                else if (lowmess.Equals("boi gif"))
-                {
-                    await message.Channel.SendMessageAsync("https://tenor.com/view/kratos-boy-kratos-boy-boi-god-of-war-gif-12278930");
-                }
-
-                else if (lowmess.Equals("jon snow gif") || lowmess.Equals("I know nothing gif"))
-                {
-                    await message.Channel.SendMessageAsync("https://tenor.com/view/got-game-of-thrones-you-know-nothing-jon-snow-ygritte-gif-14613130");
-                }
-
-                else if (lowmess.Equals("not yet gif"))
-                {
-                    await message.Channel.SendMessageAsync("https://tenor.com/view/not-yet-mace-windu-star-wars-gif-9797353");
-                }
-
-                //transfer to DB
-                else if (lowmess.Equals("you're not wrong, you're just an asshole meme"))
-                {
-                    await message.Channel.SendMessageAsync("https://media.discordapp.net/attachments/920025510883524679/948315645781626970/IMG_3714-1.jpg");
-                }
-
-                //transfer to DB
-                else if (lowmess.Equals("endlessly trapped gif"))
-                {
-                    await message.Channel.SendMessageAsync("https://cdn.discordapp.com/attachments/902629594564296725/957430021985820702/viddit_6636a42d.gif");
-                }
-
-                //Brooklyn 99 gif
-                else if (lowmess.Equals("why are you telling me gif"))
-                {
-                    await message.Channel.SendMessageAsync("https://cdn.discordapp.com/attachments/902629594564296725/948208141437395044/687d1b74-db91-4244-87e1-44cbd75390d5.gif");
-                }
-            }
-
             //For when Joe pings the degens in proactive
             else if ((ProactiveChat) && lowmess.Contains(DegenRole))
             {
@@ -1799,8 +1494,6 @@ namespace Bob_Biggby
             //Responses from Bob
             else if (lowmess.EndsWith("bob") && !lowmess.Contains("blame") && !lowmess.Contains("fault"))
             {
-                string[] commands = CommandsToAdd;
-
                 //Bob sass part 1
                 if (lowmess.Equals("fuck you bob"))
                 {
@@ -1857,52 +1550,6 @@ namespace Bob_Biggby
 
                     await message.Channel.SendMessageAsync($"{bobResponse}");
                 }
-
-                //Bob's lcr
-                else if (lowmess.Equals("lcr bob"))
-                {
-                    var foundLCR = false;
-                    foreach (var reaction in nadekoCommands)
-                    {
-                        foreach (var answer in reaction.lcr)
-                        {
-                            var msg = "Vanilla Bobs custom reactions:";
-
-                            //LB code
-                            for (var i = 0; i < Math.Min(AlphaBobCommands.Length, nadekoCommands.Count); i++)
-                            {
-                                var lcr = new List<String>();
-                                nadekoCommands = nadekoCommands.OrderByDescending(p => p.responses).ToList();
-                                //"\n" means a new line. This line will look like e.g. "1) Daniel"
-                                msg += $"\n{i + 1}) {nadekoCommands[i].lcr[0]}";
-                                //var action = $"has {vanillaBobLCR[i].responses} responses";
-                            }
-
-                            await message.Channel.SendMessageAsync($"{msg}");
-                            foundLCR = true;
-                            break;
-                        }
-                        if (foundLCR)
-                            break;
-                    }
-                    //end bob's lcr
-                }
-            }
-
-            //Responses to Rob's bot
-            else if (TheNOC)
-            {
-                if (lowmess.Contains("2015 wants its joke back"))
-                {
-                    await message.ReplyAsync("Said the bot using a joke from 2005");
-                }
-            }
-
-            //Lunch reminder
-            else if ((lowmess.Equals("going on lunch") || lowmess.Equals("taking lunch")) && Custodian)
-            {
-                await message.AddReactionAsync(thumbsupEmoji);
-                LunchReminder(message);
             }
 
             else if (lowmess.Equals("troubleshooting wheel"))
