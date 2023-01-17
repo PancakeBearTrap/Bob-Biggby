@@ -6,34 +6,12 @@ namespace GlobalShortcuts
     {
         public ulong channel;
 
-        #region Server IDs
-        //Pumphouse
-        public static bool IsPumphouse(SocketGuild server)
-        {
-            return server.Id == 353250534464946176;
-        }
-
-        //Emote Server
-        public static bool IsEmoteServer(SocketGuild server)
-        {
-            return server.Id == 818717736367947776;
-        }
-        #endregion Server IDs
-
         #region Permissions
         //Public bools for command perms
-        public static bool IsCustodian(SocketUser user)
-        {
-            //use IsCustodian(message.Author)
-            return user.Id == 334071463210385409;
-        }
-
         public static bool IsMod(SocketUser user)
         {
             //use IsMod(message.Author)
             return
-                //me
-                user.Id == 334071463210385409 ||
                 //Larson
                 user.Id == 894987795058290688 ||
                 //Joe
@@ -43,8 +21,6 @@ namespace GlobalShortcuts
         public static bool IsProactive(SocketUser user)
         {
             return
-                //me
-                user.Id == 334071463210385409 ||
                 //Brittney
                 user.Id == 784888461076987994 ||
                 //Dennis
@@ -114,8 +90,6 @@ namespace GlobalShortcuts
         {
             return
                 // Mods
-                // me
-                user.Id == 334071463210385409 ||
                 //Larson
                 user.Id == 894987795058290688 ||
                 //Joe
@@ -153,8 +127,6 @@ namespace GlobalShortcuts
         {
             return
                 // Mods
-                // me
-                user.Id == 334071463210385409 ||
                 //Larson
                 user.Id == 894987795058290688 ||
                 //Joe
@@ -194,16 +166,10 @@ namespace GlobalShortcuts
         }
 
         //Bots
-        public static bool IsBothBobs(SocketUser user)
+        public static bool IsBob(SocketUser user)
         {
             return
                 user.Id == 895393051982307349;
-        }
-
-        public static bool IsEDI(SocketUser user)
-        {
-            return
-                user.Id == 896118304652017724;
         }
 
         public static bool IsRobsBestFriend(SocketUser user)
@@ -217,16 +183,12 @@ namespace GlobalShortcuts
             return
                 //Bob
                 user.Id == 895393051982307349 ||
-                //EDI
-                user.Id == 896118304652017724 ||
                 //Rob's bot
                 user.Id == 897566501454872616;
         }
         #endregion User IDs
 
         #region Channel IDs
-
-        #region IBS Channels
         //Announcements
         public static bool IsAnnouncements(ISocketMessageChannel channel)
         {
@@ -282,50 +244,6 @@ namespace GlobalShortcuts
             return
                 channel.Id == 895367300390211634;
         }
-        #endregion IBS Channels
-
-        #region My Server Channels
-        //Bot Testing Channels
-        public static bool IsBetaBobTesting(ISocketMessageChannel channel)
-        {
-            return
-                channel.Id == 896135885245009951;
-        }
-
-        public static bool IsEDITesting(ISocketMessageChannel channel)
-        {
-            return
-                channel.Id == 946877220813680650;
-        }
-
-        public static bool IsDeezBotsTesting(ISocketMessageChannel channel)
-        {
-            return
-                channel.Id == 986398567801454662;
-        }
-
-        public static bool IsBotDatabase(ISocketMessageChannel channel)
-        {
-            return
-                channel.Id == 989223734781018112;
-        }
-
-        public static bool IsAllBotTesting(ISocketMessageChannel channel)
-        {
-            return
-                //IBS Testing
-                channel.Id == 895367300390211634 ||
-
-                //Beta Bob Testing, Pumphouse
-                channel.Id == 896135885245009951 ||
-
-                //Bot Database, Pumphouse
-                channel.Id == 989223734781018112 ||
-
-                //Deez Bots Testing, Pumphouse
-                channel.Id == 986398567801454662;
-        }
-        #endregion My Server Channels
 
         #endregion Channel IDs
 

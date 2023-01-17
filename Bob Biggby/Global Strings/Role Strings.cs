@@ -2,18 +2,6 @@
 {
     public class RoleStrings
     {
-        public static string CustodianRole()
-        {
-            var custodian = GlobalShortcuts.RoleSwitches.DiscordRoles(GlobalEnums.Roles.custodian);
-            return custodian;
-        }
-
-        public static string PumphouseAdmin()
-        {
-            var admin = GlobalShortcuts.RoleSwitches.DiscordRoles(GlobalEnums.Roles.pumphouseAdmin);
-            return admin;
-        }
-
         public static string TeamLeader()
         {
             var teamLeader = GlobalShortcuts.RoleSwitches.DiscordRoles(GlobalEnums.Roles.teamLeader);
