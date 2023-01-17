@@ -267,14 +267,6 @@ namespace Bob_Biggby
         {
             commands.Clear();
 
-<<<<<<< Updated upstream
-            //test
-            commands.Add(new Response()
-                .SetPrompts("hey, bob")
-                .SetResponses("bitch"));
-
-=======
->>>>>>> Stashed changes
             //Symbols
             commands.Add(new Response()
                 .SetPrompts(":(", ":frowning")
@@ -416,14 +408,7 @@ namespace Bob_Biggby
             commands.Add(new Response()
                 .SetPrompts("have you checked your butthole", "i know where it is")
                 .SetResponses(NadekoLCR.HaveYouCheckedYourButthole()));
-<<<<<<< Updated upstream
 
-            commands.Add(new Response()
-                .SetPrompts("hehe")
-                .SetResponses(NadekoLCR.Hehe()));
-=======
-            
->>>>>>> Stashed changes
             commands.Add(new Response()
                 .SetPrompts("hello there")
                 .SetResponses(NadekoLCR.HelloThere()));
