@@ -26,6 +26,7 @@ mono_crash.*
 
 # Build results
 #[Dd]ebug/
+WebAPIClient/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/

@@ -11,8 +11,8 @@
 *.sln.docstates
 *.dll
 *.xml
-*.phb
-*.config
+#*.phb
+#*.config
 
 # token.txt
 Bob Biggby/bin/token.txt
