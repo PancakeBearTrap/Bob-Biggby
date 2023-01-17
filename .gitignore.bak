@@ -9,6 +9,10 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.dll
+*.xml
+*.phb
+*.config
 
 # token.txt
 Bob Biggby/bin/token.txt
@@ -21,8 +25,7 @@ Bob Biggby/bin/token.txt.bak
 mono_crash.*
 
 # Build results
-[Dd]ebug/
-[Db]ebug/Bob Biggby.exe
+#[Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
