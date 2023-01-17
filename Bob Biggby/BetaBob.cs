@@ -1,13 +1,9 @@
-﻿//Namespace
 using CustomReactions;
-//Discord
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
-//Microsoft
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
-//System
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,73 +13,6 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-//Current Version, Desktop 2.8
-
-//Current Verson, Anton 2.7.1
-
-/// <summary>
-///  v2.5.3 changelog
-///  removed EDI testing
-///  Removed skeleton of adding commands to alpha bob's lcr
-///  ghost town
-///  fixed assigning JP and PP so that it's not case sensitive
-///  allowed Brittney to remove PPs 
-///  fixed PPs so that the degens don't have access to it
-///  
-/// v2.5.4 changelog
-/// fixed PPs and JPs again so that it's not case sensitive. made sure trim had {name} and {name.ToLower()}
-/// deleted og insults from else if
-/// added irish curses to insult else if
-/// added shakespeare to insult
-/// added regular insults to insult
-/// made it so that insult will trigger all 3 of the above insults
-/// 
-/// v2.5.5 changelog
-/// added IBS' haunter to the code
-/// alphabatized emotes
-/// 
-/// v2.5.6 changelog
-/// added "gif" and "meme" section to elif
-/// added Waltersobchakeit
-/// 
-/// v2.5.7
-/// Cleaned up unused code in testing (Bob only)
-/// Changed message.Author.isBot to exclude Rob's Bot
-/// Added ability to reply to messages
-/// added Politics bool
-/// updated channels to V3
-/// 
-/// v2.5.8
-/// migrated "commands to add" to their .cs files
-/// added "Jon Snow knows nothing" gif
-/// fixed "morning" so there's positive and grumpy messages
-/// 
-/// v2.5.9
-/// organized code
-/// updated alpha bob's cs file with new commands
-/// added "absolutely not" to reaction memes
-/// Removed Beta Bob's access to politics channel
-/// 
-/// V2.6
-/// changed numVal in PPs to int64 from int32
-/// added reaction to deez nutz
-/// 
-/// v2.6.1
-/// added Dr Strange morning response and reaction meme
-/// added sugar free gummy bear reviews
-/// transferred Will reactions from Alpha Bob to Beta Bob
-/// 
-/// v2.7
-/// Added newbie to Beta Bob
-/// fixed Will's command so that it didn't mess with the blame count or JPs
-/// 
-/// v2.7.1
-/// added lunch reminder
-/// 
-/// v2.8
-/// Added ability to add custom reactions a la Nadeko
-/// 
-/// </summary>
 
 namespace Bob_Biggby
 {
@@ -161,7 +90,6 @@ namespace Bob_Biggby
         {
             people.Add(new PeopleList.Person("Becky"));
             people.Add(new PeopleList.Person("Brittney"));
-            people.Add(new PeopleList.Person("Daniel"));
             people.Add(new PeopleList.Person("Dan"));
             people.Add(new PeopleList.Person("Dennis"));
             people.Add(new PeopleList.Person("Deon"));
@@ -211,7 +139,6 @@ namespace Bob_Biggby
         void CreateProactive()
         {
             proactive.Add(new PeopleList.Proactive("Brittney"));
-            proactive.Add(new PeopleList.Proactive("Daniel"));
             proactive.Add(new PeopleList.Proactive("Dennis"));
             proactive.Add(new PeopleList.Proactive("Jake"));
             proactive.Add(new PeopleList.Proactive("Joe"));
@@ -1125,21 +1052,16 @@ namespace Bob_Biggby
             //converts string to lowercase so that the message is the same for the sake of the bot
             string lowmess = stringmessage.ToLower();
 
+
+            ///<summary>
+            ///I was learning shit about coding so I made things a bit inconvienent in the process 
+            ///and also so that this .cs file would remain a bit cleaner and more readable
+            ///if you know how to read C#, it shouldn't be a problem figuring out what files all these are referencing 
+            ///if not, well, the answers are with coding gods now
+            ///have fun
+            ///</summary>
             #region Shortcuts
 
-            #region Server IDs
-            #endregion Server IDs
-
-            #region Pumphouse Server
-            //Beta Bob testing
-            bool betabobTesting = GlobalShortcuts.DiscordIDs.IsBetaBobTesting(message.Channel);
-            bool deezbotsTesting = GlobalShortcuts.DiscordIDs.IsDeezBotsTesting(message.Channel);
-            bool botDatabase = GlobalShortcuts.DiscordIDs.IsBotDatabase(message.Channel);
-            //EDI only testing
-            bool ediTesting = GlobalShortcuts.DiscordIDs.IsEDITesting(message.Channel);
-            #endregion Pumphouse Server
-
-            #region IBS Server
             #region channels            
             //Channels
             //Announcements
@@ -1158,16 +1080,12 @@ namespace Bob_Biggby
             bool PoliticsChat = GlobalShortcuts.DiscordIDs.IsPolitics(message.Channel);
 
             //Bot Testing
-            //IBS and Pumphouse channels, Bob only
-            bool Testing = GlobalShortcuts.DiscordIDs.IsAllBotTesting(message.Channel);
-            //IBS testing
             bool ibsTesting = GlobalShortcuts.DiscordIDs.IsIBSTesting(message.Channel);
             #endregion channels
 
             #region User IDs
             //User IDs
             bool Mod = GlobalShortcuts.DiscordIDs.IsMod(message.Author);
-            bool Custodian = GlobalShortcuts.DiscordIDs.IsCustodian(message.Author);
             bool Proactive = GlobalShortcuts.DiscordIDs.IsProactive(message.Author);
             bool Degen = GlobalShortcuts.DiscordIDs.IsDegen(message.Author);
             bool Everybody = GlobalShortcuts.DiscordIDs.Everybody(message.Author);
@@ -1176,16 +1094,13 @@ namespace Bob_Biggby
             bool AllButWill = GlobalShortcuts.DiscordIDs.AllButWill(message.Author);
 
             //Bots
-            bool BetaBob = GlobalShortcuts.DiscordIDs.IsBothBobs(message.Author);
-            bool EDI = GlobalShortcuts.DiscordIDs.IsEDI(message.Author);
+            bool BetaBob = GlobalShortcuts.DiscordIDs.IsBob(message.Author);
             bool TheNOC = GlobalShortcuts.DiscordIDs.IsRobsBestFriend(message.Author);
             bool AllBots = GlobalShortcuts.DiscordIDs.IsAllBots(message.Author);
             #endregion User IDs
 
             #region Roles
             //Roles
-            var ServerCustodianRole = GlobalStrings.RoleStrings.CustodianRole();
-            var PumphouseAdminRole = GlobalStrings.RoleStrings.PumphouseAdmin();
             var TeamLeaderRole = GlobalStrings.RoleStrings.TeamLeader();
             var Tier2Role = GlobalStrings.RoleStrings.Tier2();
             var BetaBobRole = GlobalStrings.RoleStrings.BetaBob();
@@ -1213,7 +1128,6 @@ namespace Bob_Biggby
             var martinInsult = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 16, 00, 00);
             var testTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 17, 29, 00);
             #endregion misc
-            #endregion IBS Server
 
             #region Emotes
             ///<summary>
@@ -1261,20 +1175,6 @@ namespace Bob_Biggby
             var ZuluFlag = Emote.Parse(GlobalStrings.IBSEmoteStrings.ZuluFlag());
             #endregion IBS Emotes
 
-            #region My Servers
-            //Pumphouse Server
-            var evilZorra = Emote.Parse(GlobalStrings.PumphouseEmoteStrings.EvilZorra());
-            var SakamotoDab = Emote.Parse(GlobalStrings.PumphouseEmoteStrings.SakamotoDab());
-            var Solaire = Emote.Parse(GlobalStrings.PumphouseEmoteStrings.Solaire());
-            //Emote Server
-            var doubt = Emote.Parse(GlobalStrings.EmoteServerStrings.Doubt());
-            var shadowHaunter = Emote.Parse(GlobalStrings.EmoteServerStrings.ShadowHaunter());
-
-            //Future emotes
-            var e_sus = Emote.Parse(GlobalStrings.FutureEmoteStrings.ESus());
-            var finger_guns = Emote.Parse(GlobalStrings.FutureEmoteStrings.FingerGuns());
-            #endregion My Servers
-
             //Random shit
             string username = message.Author.Username;
             var userID = message.Author.Id;
@@ -1297,8 +1197,8 @@ namespace Bob_Biggby
             /// reacting to messages: message.AddReactionAsync([emote]);
             /// </summary>
 
-            //this is for if Nadeko doesn't have all the commands
-            //OnGetMessage(message);
+            //this is so that Bob will keep all the commands after I transer ownership and stop hosting it myself
+            OnGetMessage(message);
 
             //Command prefix for Bob. Bob's version of '.' for Nadeko
             if (message.HasStringPrefix("+", ref argPos))
@@ -1309,28 +1209,11 @@ namespace Bob_Biggby
             }
 
             //so this code doesn't interact in politics chat
+            //"PoliticsChat" references a bool for its channel ID in global shortcuts -> bools.cs
+            //see "shortcuts" region
             else if (PoliticsChat)
             {
                 return;
-            }
-
-            //Stuff to demonstrate my power
-            else if (lowmess.Equals("i am the senate") || lowmess.Equals("i am the custodian") || lowmess.Equals("i am the discord") ||
-                lowmess.Equals("i *am* the senate") || lowmess.Equals("i *am* the custodian") || lowmess.Equals("i *am* the discord"))
-            {
-                var Sheev = "It depends who's talking";
-
-                if (Custodian)
-                {
-                    Sheev = "https://tenor.com/view/star-wars-i-am-the-senate-gif-10270130";
-                }
-
-                else
-                {
-                    Sheev = $"It's treason then \nhttps://tenor.com/view/darth-sidious-star-wars-spin-lightsaber-rolling-gif-17322873";
-                }
-
-                await message.Channel.SendMessageAsync($"{Sheev}");
             }
 
             //Insult
@@ -2526,49 +2409,12 @@ namespace Bob_Biggby
                             Console.WriteLine($"Blame used: {Today} \nname: {name} \nblame success: {blameSuccess} \nfault success: {faultSuccess} \nSass chance: {sass}\n");
 
                             var text = $"It's all {name}'s fault! {name} has been blamed {person.blameCount} times";
-                            var msg = "if you say so";
 
                             //Bob's sass
                             if (sass == 50)
                             {
-                                //If Bob tries to sass me
-                                if (Custodian)
-                                {
-                                    person.blameCount++;
-                                    msg = $"{finger_guns}";
-                                    await message.Channel.SendMessageAsync($"{msg}");
-                                    await message.Channel.SendMessageAsync($"{text}");
-                                    SavePeople();
-                                }
-
-                                //Sass when anyone else is blamed
-                                else
-                                {
-                                    text = $"{sassVal}";
-                                }
+                                text = $"{sassVal}";
                             }
-
-                            #region Will's script
-                            //for Will and his script
-                            /*
-                            else if (Will)
-                            {
-                                var alert = $"<@334071463210385409> Will might be using his stupid script";
-                                person.blameCount++;
-                                text = $"It's all {name}'s fault! {name} has been blamed {person.blameCount} times";
-                                //if someone tries to blame me
-                                if (person.id == 334071463210385409)
-                                {
-                                    text = "Nah, fam. I ain't blaming The Custodian. " +
-                                        "People have tried to blame him {person.blameCount} times";
-                                }
-
-                                await message.Channel.SendMessageAsync($"{alert}");
-                                await message.Channel.SendMessageAsync(text);
-                                SavePeople();
-                            }
-                            */
-                            #endregion Will's script
 
                             //Normal blame
                             else
@@ -2619,302 +2465,6 @@ namespace Bob_Biggby
             //End Blame
 
             #endregion Custom Points
-
-            //Blank Space
-
-            #region Test Code
-
-            ///Test Code
-            else if (Custodian && Testing)
-            {
-                //Person foreach
-                var foundPeople = false;
-                foreach (var person in people)
-                {
-                    foreach (var name in person.names)
-                    {
-                        if (lowmess.Contains("people code"))
-                        {
-                            Console.WriteLine("just a test");
-                            foundPeople = true;
-                            break;
-                        }
-
-                        foundPeople = true;
-                        break;
-                    }
-                    //end of second people foreach
-                    if (foundPeople)
-                        break;
-                }
-
-                //Proactive foreach
-                var foundProactive = false;
-                foreach (var ainur in proactive)
-                {
-                    foreach (var maia in ainur.maiar)
-                    {
-                        if (lowmess.Contains("proactive code"))
-                        {
-                            Console.WriteLine("Proactive peeps test");
-                            foundProactive = true;
-                            break;
-                        }
-                        foundProactive = true;
-                        break;
-                    }
-                    //end of second proactive peeps foreach
-                    if (foundProactive)
-                        break;
-                }
-
-                async void TestSwitch(string testing)
-                {
-                    switch (testing)
-                    {
-                        //emote testing
-                        case "emote test":
-                            testing = $"filler";
-                            await message.Channel.SendMessageAsync($"{testing}");
-                            await message.AddReactionAsync(facepalm);
-                            return;
-
-                        //reply test
-                        case "reply test":
-                            await message.ReplyAsync("test successful");
-                            break;
-
-                        //Experimental code? idk
-                        case "experiment test":
-                            await message.Channel.SendMessageAsync($"hello");
-                            break;
-
-                        //channel ID etc? idk
-                        case "channel test":
-                            await message.Channel.SendMessageAsync("channel test");
-                            break;
-
-                        //shortcut testing? idk
-                        case "shortcut test":
-                            var shortcut = "shortcut response";
-                            await message.Channel.SendMessageAsync($"{shortcut}");
-                            break;
-                    };
-                }
-
-                async void RNGSwitch(int rng)
-                {
-                    switch (rng)
-                    {
-                        case 0:
-                            await message.Channel.SendMessageAsync("case 0");
-                            break;
-
-                        case 1:
-                            await message.Channel.SendMessageAsync("case 1");
-                            break;
-
-                        case 2:
-                            await message.Channel.SendMessageAsync("case 2");
-                            break;
-                    }
-                }
-
-                //Various tests 
-                if (lowmess.Contains("test"))
-                {
-                    TestSwitch(lowmess);
-
-                    //random shit
-                    if (lowmess.Contains(PumphouseAdminRole))
-                    {
-                        var text = $"congratulations {userMention}, your code works. See {PumphouseAdminRole}?";
-                        await message.Channel.SendMessageAsync($"{text}");
-                    }
-
-                    else if (lowmess.Equals("switch test"))
-                    {
-
-                        Random random = new Random();
-                        int value = random.Next(0, 3);
-
-                        Console.WriteLine($"{value}");
-
-                        RNGSwitch(value);
-                    }
-
-                    else if (lowmess.Equals("create fuck shit test"))
-                    {
-                        commands.Add(new Response()
-                            .SetPrompts("fuck shit")
-                            .SetResponses());
-                        SaveCustomReactions();
-                    }
-
-                    else if (lowmess.Equals("response test"))
-                    {
-                        var deviceName = System.Net.Dns.GetHostName();
-                        await message.Channel.SendMessageAsync("message sent from " + deviceName);
-                    }
-                }
-                //end of if("test")
-
-                else if (lowmess.Equals("update custom commands"))
-                {
-                    UpdateCustomReactions();
-
-                    await message.Channel.SendMessageAsync($"Custom Reactions was last modified {File.GetLastWriteTime(customReactionsDataPath)}. Current time is {DateTime.Now}");
-                }
-
-                else if (lowmess.Contains("time") || lowmess.Contains("date"))
-                {
-                    var BigBen = "What format?";
-
-                    if (lowmess.StartsWith("reg"))
-                    {
-                        BigBen = Today.ToString();
-                    }
-
-                    else if (lowmess.StartsWith("full"))
-                    {
-                        //day of week, month, day, year, hh:mm:ss
-                        BigBen = Today.ToString("F");
-                    }
-
-                    else if (lowmess.StartsWith("watch") || lowmess.StartsWith("current"))
-                    {
-                        //hh:mm:ss
-                        BigBen = Today.ToString("T");
-                    }
-
-                    else if (lowmess.StartsWith("day and"))
-                    {
-                        //mm/dd/yyyy hh:mm:ss
-                        BigBen = Today.ToString("G");
-                    }
-
-                    else if (lowmess.StartsWith("day of week"))
-                    {
-                        //day of week, full
-                        BigBen = Today.ToString("dddd");
-                    }
-
-                    else if (lowmess.StartsWith("month"))
-                    {
-                        //month, date
-                        BigBen = Today.ToString("M");
-                    }
-
-                    else if (lowmess.StartsWith("year"))
-                    {
-                        //month, year
-                        BigBen = Today.ToString("Y");
-                    }
-
-                    await message.Channel.SendMessageAsync($"{BigBen}");
-                }
-
-                //Timer testing
-                else if (lowmess.Equals("timer template"))
-                {
-                    int timerCycle = 0;
-                    int maxCycles = 3;
-                    await message.Channel.SendMessageAsync("timer started");
-
-                    //using a while loop
-                    while (timerCycle < 5)
-                    {
-                        int finishedCycle = timerCycle + 1;
-                        GlobalServices.TimerTemplate.ExampleTimer();
-                        timerCycle++;
-                        Console.WriteLine($"Cyle number {finishedCycle} finished \n");
-                    }
-
-                    Console.WriteLine("All cycles complete");
-
-                    //using a for loop
-                    for (timerCycle = 0; timerCycle < maxCycles; timerCycle++)
-                    {
-                        int finishedCycle = timerCycle + 1;
-                        int cyclesRemain = maxCycles - finishedCycle;
-
-                        GlobalServices.LiveTimers.BlameTimer();
-                        Console.WriteLine($"Cyle {finishedCycle} finished \n{cyclesRemain} cycles remain \n");
-                        await message.Channel.SendMessageAsync($"Cycle {finishedCycle} finished. {cyclesRemain} cycles remain");
-                    }
-
-                    Console.WriteLine("All cycles complete");
-                }
-
-                //Blame timer test
-                else if (lowmess.Equals("blame timer test"))
-                {
-                    int timerCycle = 0;
-                    int maxCycles = 3;
-                    var potat = "https://tenor.com/view/bravo-six-going-dark-cod-sergeant-mw-modern-warfare-gif-14985183";
-
-                    await message.Channel.SendMessageAsync($"{potat}");
-
-                    for (timerCycle = 0; timerCycle < maxCycles; timerCycle++)
-                    {
-                        int finishedCycle = timerCycle + 1;
-                        int cyclesRemain = maxCycles - finishedCycle;
-
-                        GlobalServices.LiveTimers.BlameTimer();
-
-                        //Cycle
-                        if (finishedCycle < (maxCycles - 1))
-                        {
-                            potat = $"Cycle {finishedCycle} finished. {cyclesRemain} cycles remain";
-
-                        }
-
-                        //Last cycle
-                        else if (finishedCycle == maxCycles)
-                        {
-                            potat = $"Last cycle finished. No cycles remain";
-                        }
-
-                        Console.WriteLine($"Cyle {finishedCycle} finished \n{cyclesRemain} cycles remain \n");
-                        await message.Channel.SendMessageAsync($"{potat}");
-
-                    }
-
-                    Console.WriteLine("All cycles complete");
-                    await message.Channel.SendMessageAsync("timer finished");
-                }
-
-                //interval test
-                else if (lowmess.Equals("interval test"))
-                {
-                    // Define two dates.
-                    DateTime date1 = new DateTime(2010, 1, 1, 8, 0, 15);
-                    DateTime date2 = new DateTime(2010, 8, 18, 13, 30, 30);
-                    var date3 = message.Timestamp;
-                    var date4 = DateTime.Now;
-
-                    // Calculate the interval between the two dates.
-                    TimeSpan interval = date2 - date1;
-                    Console.WriteLine("{0} - {1} = {2}", date2, date1, interval.ToString());
-                    Console.WriteLine($"Timestamp: {date3}");
-
-                    // Display individual properties of the resulting TimeSpan object.
-                    //Console.WriteLine("   {0,-35} {1,20}", "Total Number of Days:", interval.TotalDays); for gaps in between {0} and {1} used in the example
-                    Console.WriteLine("   {0} {1}", "Value of Days Component:", interval.Days);
-                    Console.WriteLine("   {0,-35} {1,20}", "Total Number of Days:", interval.TotalDays);
-                    Console.WriteLine("   {0,-35} {1,20}", "Value of Hours Component:", interval.Hours);
-                    Console.WriteLine("   {0,-35} {1,20}", "Total Number of Hours:", interval.TotalHours);
-                    Console.WriteLine("   {0,-35} {1,20}", "Value of Minutes Component:", interval.Minutes);
-                    Console.WriteLine("   {0,-35} {1,20}", "Total Number of Minutes:", interval.TotalMinutes);
-                    Console.WriteLine("   {0,-35} {1,20:N0}", "Value of Seconds Component:", interval.Seconds);
-                    Console.WriteLine("   {0,-35} {1,20:N0}", "Total Number of Seconds:", interval.TotalSeconds);
-                    Console.WriteLine("   {0,-35} {1,20:N0}", "Value of Milliseconds Component:", interval.Milliseconds);
-                    Console.WriteLine("   {0,-35} {1,20:N0}", "Total Number of Milliseconds:", interval.TotalMilliseconds);
-                    Console.WriteLine("   {0,-35} {1,20:N0}", "Ticks:", interval.Ticks);
-                }
-            }
-
-            #endregion Test code
 
         }
         //end of else if statements
